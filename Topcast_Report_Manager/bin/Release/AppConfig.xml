@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Config>
+  <GenConfig>
+    <MainFormWidth>1400</MainFormWidth>
+    <MainFormHeight>900</MainFormHeight>
+    <ChildFormWidth>800</ChildFormWidth>
+    <ChildFormHeight>600</ChildFormHeight>
+    <FullScreen>True</FullScreen>
+    <DefLenguage>FR</DefLenguage>
+    <DefReportPath>C:\</DefReportPath>
+    <DefReportFileName>REPORT_@SUB@_.csv</DefReportFileName>
+    <CsvSeparator>;</CsvSeparator>
+    <IsAlarmLog>True</IsAlarmLog>
+    <IsEventLog>False</IsEventLog>
+    <IsVirtualKeyBoard>False</IsVirtualKeyBoard>
+  </GenConfig>
+  <SqlConnConfig>
+    <SqlServerIP>192.168.10.100</SqlServerIP>
+    <SqlServerName>SQLEXPRESS</SqlServerName>
+    <SqlDbName>TCC</SqlDbName>
+    <SqlUserID>Topcast</SqlUserID>
+    <SqlUserPWD>Topcast</SqlUserPWD>
+    <SqlDateTimeFormat>yyyy-dd-MM HH:mm:ss.FFF</SqlDateTimeFormat>
+  </SqlConnConfig>
+  <SqlTableConfig>
+    <VarLogTable>LogVariables</VarLogTable>
+    <EventsLogTable>LogEvents</EventsLogTable>
+    <AlarmsLogTable>LogAlarms</AlarmsLogTable>
+  </SqlTableConfig>
+</Config>

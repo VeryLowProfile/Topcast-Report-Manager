@@ -1,0 +1,2395 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Config>
+  <Alarm>
+    <AlarmTag>Alarm_1</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 1 I0.0 - I0.1</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 1 I0.0 - I0.1</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 1 : HM PRINCIPAL I0.0 - I0.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_2</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 2 I0.2 - I0.3 </AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 2 I0.2 - I0.3 </AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 2 : 1ER ETAGE I0.2 - I0.3 </AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_3</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 3 I38.0 - I38.1</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 3 I38.0 - I38.1</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 3 : ARMOIRE ELECTRIQUE ARRIERE I38.0 - I38.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_4</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 4 I38.2 - I38.3 </AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 4 I38.2 - I38.3 </AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 4 : ESCALIERS ESCAMOTABLES I38.2 - I38.3 </AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_5</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 5 I87.0 - I87.1</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 5 I87.0 - I87.1</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 5 : PORTE RECUPERATION BARRES, COTE GAUCHE I87.0 - I87.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_6</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 6 I93.0 - I93.1</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 6 I93.0 - I93.1</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 6 : ZONE RECUPERATION DES COPEAUX I93.0 - I93.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_7</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA 7 I93.2 - I93.3</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON 7 I93.2 - I93.3</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE BOUTON 7 : UNITE DE COUPE I93.2 - I93.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_10</AlarmTag>
+    <AlarmText_IT>SAFETY - PULSANTE EMERGENZA PREMUTO</AlarmText_IT>
+    <AlarmText_EN>SAFETY - EMERGENCY PUSH BUTTON PRESSED</AlarmText_EN>
+    <AlarmText_FR>SECURITE - ARRET D'URGENCE ENFONCE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_30</AlarmTag>
+    <AlarmText_IT>CHILLER - CHILLER ALARM</AlarmText_IT>
+    <AlarmText_EN>CHILLER - CHILLER ALARM</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - ALARME GROUPE FROID</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_31</AlarmTag>
+    <AlarmText_IT>CHILLER - COOLING ON EMERGENCY WATER</AlarmText_IT>
+    <AlarmText_EN>CHILLER - COOLING ON EMERGENCY WATER</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - REFROIDISSEMENT SUR EAU DE SECOURS</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_32</AlarmTag>
+    <AlarmText_IT>CHILLER - PUMP SWITCH OFF I37.0</AlarmText_IT>
+    <AlarmText_EN>CHILLER - PUMP SWITCH OFF I37.0</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - PUMP SWITCH OFF I37.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_33</AlarmTag>
+    <AlarmText_IT>CHILLER - LOW WATER FLOW RETURN IW22</AlarmText_IT>
+    <AlarmText_EN>CHILLER - LOW WATER FLOW RETURN IW22</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - DEBIT EAU DE RETOUR TROP FAIBLE IW22</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_34</AlarmTag>
+    <AlarmText_IT>CHILLER - WATER HIGH TEMP RETURN IW20</AlarmText_IT>
+    <AlarmText_EN>CHILLER - WATER HIGH TEMP RETURN IW20</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - TEMPERATURE EAU DE RETOUR TROP HAUTE IW20</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_35</AlarmTag>
+    <AlarmText_IT>CHILLER - WATER LOW TEMP RETURN IW20</AlarmText_IT>
+    <AlarmText_EN>CHILLER - WATER LOW TEMP RETURN IW20</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - TEMPERATURE EAU DE RETOUR TROP BASSE IW20</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_36</AlarmTag>
+    <AlarmText_IT>CHILLER - VALVE INCOERENCE  I0.4 I0.5</AlarmText_IT>
+    <AlarmText_EN>CHILLER - VALVE INCOERENCE I0.4 I0.5</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - INCOHERENCE VANNE I0.4 I0.5</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_37</AlarmTag>
+    <AlarmText_IT>CHILLER - LOW EMERGENCY WATER PRESSURE I36.6</AlarmText_IT>
+    <AlarmText_EN>CHILLER - LOW EMERGENCY WATER PRESSURE I36.6</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - PRESSION EAU DE SECOURS TROP BASSE I36.6</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_38</AlarmTag>
+    <AlarmText_IT>CHILLER - LOW TANK WATER LEVEL I36.7</AlarmText_IT>
+    <AlarmText_EN>CHILLER - LOW TANK WATER LEVEL I36.7</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - NIVEAU RESERVOIR EAU TROP BAS I36.7</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_39</AlarmTag>
+    <AlarmText_IT>CHILLER - TGEN CRUCIBLE WATER ALARM</AlarmText_IT>
+    <AlarmText_EN>CHILLER - TGEN CRUCIBLE WATER ALARM</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - ALARME EAU GENERATEUR CREUSET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_40</AlarmTag>
+    <AlarmText_IT>CHILLER - TGEN DIE WATER ALARM</AlarmText_IT>
+    <AlarmText_EN>CHILLER - TGEN DIE WATER ALARM</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID -  ALARME EAU GENERATEUR FILIERE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_41</AlarmTag>
+    <AlarmText_IT>CHILLER - COLD WATER HIGH TEMP IW28</AlarmText_IT>
+    <AlarmText_EN>CHILLER - COLD WATER HIGH TEMP IW28</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - EAU DE REFROIDISSEMENT TROP CHAUDE IW28</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_42</AlarmTag>
+    <AlarmText_IT>CHILLER - COLD WATER LOW TEMP IW28</AlarmText_IT>
+    <AlarmText_EN>CHILLER - COLD WATER LOW TEMP IW28</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - EAU DE REFROIDISSEMENT TROP FROIDE IW28</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_43</AlarmTag>
+    <AlarmText_IT>CHILLER - COLD WATER FLOW IW26</AlarmText_IT>
+    <AlarmText_EN>CHILLER - COLD WATER FLOW IW26</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - DEBIT EAU DE REFROIDISSEMENT IW26</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_44</AlarmTag>
+    <AlarmText_IT>CHILLER - LOW WATER FLOW SEND IW130</AlarmText_IT>
+    <AlarmText_EN>CHILLER - LOW WATER FLOW SEND IW130</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - LOW WATER FLOW SEND IW130</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_45</AlarmTag>
+    <AlarmText_IT>CHILLER - WATER HIGH TEMP SEND IW132</AlarmText_IT>
+    <AlarmText_EN>CHILLER - WATER HIGH TEMP SEND IW132</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - WATER HIGH TEMP SEND IW132</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_46</AlarmTag>
+    <AlarmText_IT>CHILLER - WATER LOW TEMP SEND IW132</AlarmText_IT>
+    <AlarmText_EN>CHILLER - WATER LOW TEMP SEND IW132</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - WATER LOW TEMP SEND IW132</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_47</AlarmTag>
+    <AlarmText_IT>CHILLER - SEND RETURN FLOW DIFFERENCE IW20 IW130</AlarmText_IT>
+    <AlarmText_EN>CHILLER - SEND RETURN FLOW DIFFERENCE IW20 IW130</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID - SEND RETURN FLOW DIFFERENCE IW20 IW130</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_48</AlarmTag>
+    <AlarmText_IT>PROCESSO - LOW DIE TERMOCOUPLE IW131 TEMPRERATURE TOO HIGH</AlarmText_IT>
+    <AlarmText_EN>PROCESS - LOW DIE TERMOCOUPLE IW131 TEMPRERATURE TOO HIGH</AlarmText_EN>
+    <AlarmText_FR>PROCESS - THERMOCOUPLE BAS FILIERE IW131 TEMPÉRATURE TROP ÉLEVÉE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_49</AlarmTag>
+    <AlarmText_IT>SPARE 49 - SPARE 49</AlarmText_IT>
+    <AlarmText_EN>SPARE 49 - SPARE 49</AlarmText_EN>
+    <AlarmText_FR>SPARE 49 - SPARE 49</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_50</AlarmTag>
+    <AlarmText_IT>PROCESSO - OVERRUNNING TAGLIO I179.0 I179.1</AlarmText_IT>
+    <AlarmText_EN>PROCESS - CUT OVERRUNNING I179.0 I179.1</AlarmText_EN>
+    <AlarmText_FR>PROCESS - CUT OVERRUNNING I179.0 I179.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_51</AlarmTag>
+    <AlarmText_IT>PROCESSO - BARRA NON PRESENTE I178.3 I178.4 I178.5</AlarmText_IT>
+    <AlarmText_EN>PROCESS - BAR NOT PRESENT I178.3 I178.4 I178.5</AlarmText_EN>
+    <AlarmText_FR>PROCESS - BARRE NON PRESENTE I178.3 I178.4 I178.5</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_52</AlarmTag>
+    <AlarmText_IT>PROCESSO - ROTTURA BARRA I178.3 I178.4 I178.5</AlarmText_IT>
+    <AlarmText_EN>PROCESS - BAR BROKEN I178.3 I178.4 I178.5</AlarmText_EN>
+    <AlarmText_FR>PROCESS - DESAMORCAGE I178.3 I178.4 I178.5</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_53</AlarmTag>
+    <AlarmText_IT>PROCESSO - GRUPPO TAGLIO NON IN POSITIZIONE DI TAGLIO I181.2 I181.3</AlarmText_IT>
+    <AlarmText_EN>PROCESS - CUT ASSEMBLY NOT IN CUT POSITION I181.2 I181.3</AlarmText_EN>
+    <AlarmText_FR>PROCESS - UNITE DE COUPE PAS EN POSITION DE COUPE I181.2 I181.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_54</AlarmTag>
+    <AlarmText_IT>PROCESSO - PIROMETRO IW171</AlarmText_IT>
+    <AlarmText_EN>PROCESS - PYROMETER IW171</AlarmText_EN>
+    <AlarmText_FR>PROCESS - PYROMETRE IW171</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_55</AlarmTag>
+    <AlarmText_IT>PROCESSO - PARAMETRI DI CONFIGURAZIONE MANCANTI</AlarmText_IT>
+    <AlarmText_EN>PROCESS - CONFIG PARAM MISSING</AlarmText_EN>
+    <AlarmText_FR>PROCESS - PARAMETRES DE CONFIGURATION MACHINE MANQUANTS</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_56</AlarmTag>
+    <AlarmText_IT>PROCESSO - PARAMETRI RICETTA MANCANTI</AlarmText_IT>
+    <AlarmText_EN>PROCESS - RECIPE PARAM MISSING</AlarmText_EN>
+    <AlarmText_FR>PROCESS - PARAMETRES DE RECETTE MANQUANTS</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_57</AlarmTag>
+    <AlarmText_IT>MORSE - SBLOCCATE</AlarmText_IT>
+    <AlarmText_EN>CLAMP - UNLOCKED</AlarmText_EN>
+    <AlarmText_FR>ETAU - OUVERT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_58</AlarmTag>
+    <AlarmText_IT>SPARE 58 - SPARE 58</AlarmText_IT>
+    <AlarmText_EN>PROCESS - INSTALLED DRAWING NOT COERENT WITH RECIPE</AlarmText_EN>
+    <AlarmText_FR>PROCESS - UNITÉ D'EXTRACTION NON COHÉRENTE AVEC LA RECETTE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_59</AlarmTag>
+    <AlarmText_IT>PROCESSO - GRUPPO DI TAGLIO NON CORRETTO</AlarmText_IT>
+    <AlarmText_EN>PROCESS - CUTTING UNIT NOT CORRECT INSTALLED</AlarmText_EN>
+    <AlarmText_FR>PROCESS - UNITÉ DE COUPE INSTALLÉE NON CORRECTE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_60</AlarmTag>
+    <AlarmText_IT>SM 1 REQ NEW FO - PAUSED</AlarmText_IT>
+    <AlarmText_EN>SM 1 REQ NEW FO - PAUSED</AlarmText_EN>
+    <AlarmText_FR>SM 1 DEMANDE NOUVEL OF - EN PAUSE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_61</AlarmTag>
+    <AlarmText_IT>SM 1 REQ NEW FO - STOPPED</AlarmText_IT>
+    <AlarmText_EN>SM 1 REQ NEW FO - STOPPED</AlarmText_EN>
+    <AlarmText_FR>SM 1 DEMANDE NOUVEL OF - ARRETE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_62</AlarmTag>
+    <AlarmText_IT>SM 1 REQ NEW FO - RESET</AlarmText_IT>
+    <AlarmText_EN>SM 1 REQ NEW FO - RESET</AlarmText_EN>
+    <AlarmText_FR>SM 1 DEMANDE NOUVEL OF - RESET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_63</AlarmTag>
+    <AlarmText_IT>SM 1 REQ NEW FO - ABORTED</AlarmText_IT>
+    <AlarmText_EN>SM 1 REQ NEW FO - ABORTED</AlarmText_EN>
+    <AlarmText_FR>SM 1 DEMANDE NOUVEL OF - ABANDONNE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_64</AlarmTag>
+    <AlarmText_IT>SM 2 CRUCIBLE FILLING - PAUSED</AlarmText_IT>
+    <AlarmText_EN>SM 3 CRUCIBLE FILLING - PAUSED</AlarmText_EN>
+    <AlarmText_FR>SM 3 REMPLISSSAGE CREUSET - EN PAUSE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_65</AlarmTag>
+    <AlarmText_IT>SM 2 CRUCIBLE FILLING - STOPPED</AlarmText_IT>
+    <AlarmText_EN>SM 3 CRUCIBLE FILLING - STOPPED</AlarmText_EN>
+    <AlarmText_FR>SM 3 REMPLISSSAGE CREUSET  - ARRETE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_66</AlarmTag>
+    <AlarmText_IT>SM 2 CRUCIBLE FILLING - RESET</AlarmText_IT>
+    <AlarmText_EN>SM 3 CRUCIBLE FILLING - RESET</AlarmText_EN>
+    <AlarmText_FR>SM 3 REMPLISSSAGE CREUSET  - RESET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_67</AlarmTag>
+    <AlarmText_IT>SM 2 CRUCIBLE FILLING - ABORTED</AlarmText_IT>
+    <AlarmText_EN>SM 3 CRUCIBLE FILLING - ABORTED</AlarmText_EN>
+    <AlarmText_FR>SM 3 REMPLISSSAGE CREUSET  - ABANDONNE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_68</AlarmTag>
+    <AlarmText_IT>SM 3 MELTING DROWING - PAUSED</AlarmText_IT>
+    <AlarmText_EN>SM 3 MELTING DROWING - PAUSED</AlarmText_EN>
+    <AlarmText_FR>SM 3 FUSION &amp; EXTRACTION - EN PAUSE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_69</AlarmTag>
+    <AlarmText_IT>SM 3 MELTING DROWING - STOPPED</AlarmText_IT>
+    <AlarmText_EN>SM 3 MELTING DROWING - STOPPED</AlarmText_EN>
+    <AlarmText_FR>SM 3 FUSION &amp; EXTRACTION - ARRETE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_70</AlarmTag>
+    <AlarmText_IT>SM 3 MELTING DROWING - RESET</AlarmText_IT>
+    <AlarmText_EN>SM 3 MELTING DROWING - RESET</AlarmText_EN>
+    <AlarmText_FR>SM 3 FUSION &amp; EXTRACTION - RESET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_71</AlarmTag>
+    <AlarmText_IT>SM 3 MELTING DROWING - ABORTED</AlarmText_IT>
+    <AlarmText_EN>SM 3 MELTING DROWING - ABORTED</AlarmText_EN>
+    <AlarmText_FR>SM 3 FUSION &amp; EXTRACTION - ABANDONNE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_72</AlarmTag>
+    <AlarmText_IT>SM 4 CONTINOUS FILLING - PAUSED</AlarmText_IT>
+    <AlarmText_EN>SM 5 CONTINOUS FILLING - PAUSED</AlarmText_EN>
+    <AlarmText_FR>SM 5 REMPLISSAGE CONTINU - EN PAUSE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_73</AlarmTag>
+    <AlarmText_IT>SM 4 CONTINOUS FILLING - STOPPED</AlarmText_IT>
+    <AlarmText_EN>SM 5 CONTINOUS FILLING - STOPPED</AlarmText_EN>
+    <AlarmText_FR>SM 5 REMPLISSAGE CONTINU - ARRETE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_74</AlarmTag>
+    <AlarmText_IT>SM 4 CONTINOUS FILLING - RESET</AlarmText_IT>
+    <AlarmText_EN>SM 5 CONTINOUS FILLING - RESET</AlarmText_EN>
+    <AlarmText_FR>SM 5 REMPLISSAGE CONTINU - RESET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_75</AlarmTag>
+    <AlarmText_IT>SM 4 CONTINOUS FILLING - ABORTED</AlarmText_IT>
+    <AlarmText_EN>SM 5 CONTINOUS FILLING - ABORTED</AlarmText_EN>
+    <AlarmText_FR>SM 5 REMPLISSAGE CONTINU - ABANDONNE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_76</AlarmTag>
+    <AlarmText_IT>SM 5 CUTTING - PAUSED</AlarmText_IT>
+    <AlarmText_EN>SM 6 CUTTING - PAUSED</AlarmText_EN>
+    <AlarmText_FR>SM 6 COUPE - EN PAUSE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_77</AlarmTag>
+    <AlarmText_IT>SM 5 CUTTING - STOPPED</AlarmText_IT>
+    <AlarmText_EN>SM 6 CUTTING - STOPPED</AlarmText_EN>
+    <AlarmText_FR>SM 6 COUPE - ARRETE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_78</AlarmTag>
+    <AlarmText_IT>SM 5 CUTTING - RESET</AlarmText_IT>
+    <AlarmText_EN>SM 6 CUTTING - RESET</AlarmText_EN>
+    <AlarmText_FR>SM 6 COUPE -  RESET</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_79</AlarmTag>
+    <AlarmText_IT>SM 5 CUTTING - ABORTED</AlarmText_IT>
+    <AlarmText_EN>SM 6 CUTTING - ABORTED</AlarmText_EN>
+    <AlarmText_FR>SM 6 COUPE - ABANDONNE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_90</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - DRAWING MOTOR OFF I158.3</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - DRAWING MOTOR OFF I158.3</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - MOTEUR EXTRACTION OFF I158.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_91</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - SAW ROTATION OFF I57.1</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - SAW ROTATION OFF I57.1</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - ROTATION SCIE OFF I57.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_92</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - SAW POSITION OFF I57.0</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - SAW POSITION OFF I57.0</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - POSITION SCIE OFF I57.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_93</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - CHILLER PUMP OFF I37.0</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - CHILLER PUMP OFF I37.0</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - POMPE GROUPE FROID OFF I37.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_94</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - Q TCC OFF I57.4</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - Q TCC OFF I57.4</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - ARMOIRE TCC OFF I57.4</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_95</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - TGEN CRUCIBLE OFF I57.2</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - TGEN CRUCIBLE OFF I57.2</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - GENERATEUR CREUSET OFF I57.2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_96</AlarmTag>
+    <AlarmText_IT>POWER SWITCH - TGEN DIE OFF I57.3</AlarmText_IT>
+    <AlarmText_EN>POWER SWITCH - TGEN DIE OFF I57.3</AlarmText_EN>
+    <AlarmText_FR>INTERRUPTEUR DE PUISSANCE - GENERATEUR FILIERE OFF I57.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_100</AlarmTag>
+    <AlarmText_IT>DROWING ENCODER - FAULT</AlarmText_IT>
+    <AlarmText_EN>DROWING ENCODER - FAULT</AlarmText_EN>
+    <AlarmText_FR>CODEUR EXTRACTION - EN DEFAUT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_101</AlarmTag>
+    <AlarmText_IT>DROWING MOTOR - STEPPER DRIVE FAULT I178.0</AlarmText_IT>
+    <AlarmText_EN>DROWING MOTOR - STEPPER DRIVE FAULT I178.0</AlarmText_EN>
+    <AlarmText_FR>MOTEUR EXTRACTION - DEFAUT DRIVER PAS A PAS I178.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_102</AlarmTag>
+    <AlarmText_IT>DROWING MOTOR - PULSE GEN NOT READY</AlarmText_IT>
+    <AlarmText_EN>DROWING MOTOR - PULSE GEN NOT READY</AlarmText_EN>
+    <AlarmText_FR>MOTEUR EXTRACTION - GENERATEUR DE PULSE PAS PRÊT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_103</AlarmTag>
+    <AlarmText_IT>ASSE MOVIMENTAZIONE SEGA - NO OK</AlarmText_IT>
+    <AlarmText_EN>SAW MOTION AXIS - NO OK</AlarmText_EN>
+    <AlarmText_FR>AXE DEPLACEMENT SCIE - PAS OK</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_104</AlarmTag>
+    <AlarmText_IT>ASSE MOVIMENTAZIONE SEGA - HOME NO OK</AlarmText_IT>
+    <AlarmText_EN>SAW MOTION AXIS - HOME NO OK</AlarmText_EN>
+    <AlarmText_FR>AXE DEPLACEMENT SCIE - POSITION INITIALE PAS OK</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_105</AlarmTag>
+    <AlarmText_IT>ASSE ROTAZIONE SEGA - NO OK</AlarmText_IT>
+    <AlarmText_EN>SAW ROTATION AXIS - NO OK</AlarmText_EN>
+    <AlarmText_FR>AXE ROTATION SCIE - PAS OK</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_110</AlarmTag>
+    <AlarmText_IT>OTTURATORE - TIME OUT EXTEND I184.2</AlarmText_IT>
+    <AlarmText_EN>STOPPER - TIME OUT EXTEND I184.2</AlarmText_EN>
+    <AlarmText_FR>QUENOUILLE - TEMPS OUVERTURE DEPASSE I184.2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_111</AlarmTag>
+    <AlarmText_IT>OTTURATORE - TIME OUT RELEASE I184.3</AlarmText_IT>
+    <AlarmText_EN>STOPPER - TIME OUT RELEASE I184.3</AlarmText_EN>
+    <AlarmText_FR>QUENOUILLE - TEMPS FERMETURE DEPASSE I184.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_112</AlarmTag>
+    <AlarmText_IT>BLOCCO POSIZIONE TAGLIO - TIME OUT EXTEND I181.2 I181.3</AlarmText_IT>
+    <AlarmText_EN>CUTTING POSITION LOCK - TIME OUT EXTEND I181.2 I181.3</AlarmText_EN>
+    <AlarmText_FR>UNITE DE COUPE : POSITION COUPE - TEMPS VERROUILLAGE DEPASSE I181.2 I181.3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_113</AlarmTag>
+    <AlarmText_IT>BLOCCO POSIZIONE TAGLIO - TIME OUT RELEASE I181.4 I181.5</AlarmText_IT>
+    <AlarmText_EN>CUTTING POSITION LOCK - TIME OUT RELEASE I181.4 I181.5</AlarmText_EN>
+    <AlarmText_FR>UNITE DE COUPE : POSITION COUPE - TEMPS DEVERROUILLAGE DEPASSE I181.4 I181.5</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_114</AlarmTag>
+    <AlarmText_IT>BLOCCO POSIZIONE MANUTENZIONE - TIME OUT EXTEND I180.6 I180.7</AlarmText_IT>
+    <AlarmText_EN>MAINTENANCE POSITION LOCK - TIME OUT EXTEND I180.6 I180.7</AlarmText_EN>
+    <AlarmText_FR>UNITE DE COUPE : POSITION MONTAGE - TEMPS VERROUILLAGE DEPASSE I180.6 I180.7</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_115</AlarmTag>
+    <AlarmText_IT>BLOCCO POSIZIONE MANUTENZIONE - TIME OUT RELEASE I181.0 I181.1</AlarmText_IT>
+    <AlarmText_EN>MAINTENANCE POSITION LOCK - TIME OUT RELEASE I181.0 I181.1</AlarmText_EN>
+    <AlarmText_FR>UNITE DE COUPE : POSITION MONTAGE - TEMPS DEVERROUILLAGE DEPASSE I181.0 I181.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_116</AlarmTag>
+    <AlarmText_IT>PISTONE SPINTA BARRA - TIME OUT EXTEND I182.5 I182.6</AlarmText_IT>
+    <AlarmText_EN>BAR PUSHING PISTON - TIME OUT EXTEND I182.5 I182.6</AlarmText_EN>
+    <AlarmText_FR>VERIN DE POUSSEE DES BARRES - TEMPS OUVERTURE DEPASSE I182.5 I182.6</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_117</AlarmTag>
+    <AlarmText_IT>PISTONE SPINTA BARRA - TIME OUT RELEASE I182.3 I182.4</AlarmText_IT>
+    <AlarmText_EN>BAR PUSHING PISTON - TIME OUT RELEASE I182.3 I182.4</AlarmText_EN>
+    <AlarmText_FR>VERIN DE POUSSEE DES BARRES - TEMPS FERMETURE DEPASSE I182.3 I182.4</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_118</AlarmTag>
+    <AlarmText_IT>PISTONE TENUTA BARRA - TIME OUT EXTEND I183.1 I183.2</AlarmText_IT>
+    <AlarmText_EN>BAR KEEP PISTON - TIME OUT EXTEND  I183.1 I183.2</AlarmText_EN>
+    <AlarmText_FR>VERIN RETENUE BARRES - TEMPS OUVERTURE DEPASSE  I183.1 I183.2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_119</AlarmTag>
+    <AlarmText_IT>PISTONE TENUTA BARRA - TIME OUT RELEASE I182.7 I183.0</AlarmText_IT>
+    <AlarmText_EN>BAR KEEP PISTON - TIME OUT RELEASE  I182.7 I183.0</AlarmText_EN>
+    <AlarmText_FR>VERIN RETENUE BARRES - TEMPS FERMETURE DEPASSE  I182.7 I183.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_120</AlarmTag>
+    <AlarmText_IT>PISTONE ESTRAZIONE RULLI - TIME OUT EXTEND I178.6 I178.7</AlarmText_IT>
+    <AlarmText_EN>ROLLER EXTRACTION PISTON - TIME OUT EXTEND I178.6 I178.7</AlarmText_EN>
+    <AlarmText_FR>VERIN DE SORTIE UNITE EXTRACTION - TEMPS OUVERTURE DEPASSE I178.6 I178.7</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_121</AlarmTag>
+    <AlarmText_IT>PISTONE ESTRAZIONE RULLI - TIME OUT RELEASE I179.0 I179.1</AlarmText_IT>
+    <AlarmText_EN>ROLLER EXTRACTION PISTON - TIME OUT RELEASE I179.0 I179.1</AlarmText_EN>
+    <AlarmText_FR>VERIN DE SORTIE UNITE EXTRACTION - TEMPS FERMETURE DEPASSE I179.0 I179.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_122</AlarmTag>
+    <AlarmText_IT>MORSA BASSA - TIME OUT EXTEND I179.4 QW30</AlarmText_IT>
+    <AlarmText_EN>DOWN VICE - TIME OUT EXTEND I179.4 QW30</AlarmText_EN>
+    <AlarmText_FR>ETAU INFERIEUR - TEMPS OUVERTURE DEPASSE I179.4 QW30</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_123</AlarmTag>
+    <AlarmText_IT>MORSA BASSA - TIME OUT RELEASE I179.2 QW30</AlarmText_IT>
+    <AlarmText_EN>DOWN VICE - TIME OUT RELEASE I179.2 QW30</AlarmText_EN>
+    <AlarmText_FR>ETAU INFERIEUR - TEMPS FERMETURE DEPASSE I179.2 QW30</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_124</AlarmTag>
+    <AlarmText_IT>MORSA ALTA - TIME OUT EXTEND I179.1 QW32</AlarmText_IT>
+    <AlarmText_EN>UP VICE - TIME OUT EXTEND I179.1 QW32</AlarmText_EN>
+    <AlarmText_FR>ETAU SUPERIEUR - TEMPS OUVERTURE DEPASSE I179.1 QW32</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_125</AlarmTag>
+    <AlarmText_IT>MORSA ALTA - TIME OUT RELEASE I179.3 QW32</AlarmText_IT>
+    <AlarmText_EN>UP VICE - TIME OUT RELEASE I179.3 QW32</AlarmText_EN>
+    <AlarmText_FR>ETAU SUPERIEUR - TEMPS FERMETURE DEPASSE I179.3 QW32</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_126</AlarmTag>
+    <AlarmText_IT>CHIUSURA RULLI - TIME OUT EXTEND IW161</AlarmText_IT>
+    <AlarmText_EN>ROLLERS - TIME OUT EXTEND IW161</AlarmText_EN>
+    <AlarmText_FR>ROULEAUX EXTRACTION - TEMPS OUVERTURE DEPASSE IW161</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_127</AlarmTag>
+    <AlarmText_IT>CHIUSURA RULLI - TIME OUT RELEASE IW161</AlarmText_IT>
+    <AlarmText_EN>ROLLERS - TIME OUT RELEASE IW161</AlarmText_EN>
+    <AlarmText_FR>ROULEAUX EXTRACTION - TEMPS FERMETURE DEPASSE IW161</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_128</AlarmTag>
+    <AlarmText_IT>SOLLEVAMENTO TAGLIO - TIME OUT PUSH I178.6 I178.7</AlarmText_IT>
+    <AlarmText_EN>CUTTING GROUP LIFTER - TIME OUT PUSH I178.6 I178.7</AlarmText_EN>
+    <AlarmText_FR>VERIN COMPENSATION POIDS UNITE DE COUPE - TEMPS MAINTIEN DEPASSE I178.6 I178.7</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_129</AlarmTag>
+    <AlarmText_IT>SOLLEVAMENTO TAGLIO - TIME OUT RELEASE I179.0 I179.1</AlarmText_IT>
+    <AlarmText_EN>CUTTING GROUP LIFTER - TIME OUT RELEASE I179.0 I179.1</AlarmText_EN>
+    <AlarmText_FR>VERIN COMPENSATION POIDS UNITE DE COUPE - TEMPS DESCENTE DEPASSE I179.0 I179.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_130</AlarmTag>
+    <AlarmText_IT>PISTONE TRONCATRICE - TIME OUT EXTEND I180.1</AlarmText_IT>
+    <AlarmText_EN>SHEAR PISTON - TIME OUT EXTEND I180.1</AlarmText_EN>
+    <AlarmText_FR>VERIN POSITION CISAILLE - TEMPS OUVERTURE DEPASSE I180.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_131</AlarmTag>
+    <AlarmText_IT>PISTONE TRONCATRICE - TIME OUT RELEASE I180.0</AlarmText_IT>
+    <AlarmText_EN>SHEAR PISTON - TIME OUT RELEASE I180.0</AlarmText_EN>
+    <AlarmText_FR>VERIN POSITION CISAILLE - TEMPS FERMETURE DEPASSE I180.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_132</AlarmTag>
+    <AlarmText_IT>TRONCATRICE NON IN HOME - SENSOR I180.1</AlarmText_IT>
+    <AlarmText_EN>SHEAR NOT IN HOME -  SENSOR I180.1</AlarmText_EN>
+    <AlarmText_FR>COUTEAU CISAILLE PAS EN POSITION INITIALE - CAPTEUR I180.1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_140</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC RITORNO - LIMITE SUPERIORE SUPERATO IW20</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE RETURN - HIGH LIMIT EXCEED IW20</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU RETOUR - LIMITE SUPERIEURE DEPASSEE IW20</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_141</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC RITORNO - LIMITE INFERIORE SUPERATO IW20</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE RETURN - LOW LIMIT EXCEED IW20</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU RETOUR - LIMITE INFERIEURE DEPASSEE IW20</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_142</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC RITORNO - FAULT SENSORE IW20</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE RETURN - SENSOR FAULT IW20</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU RETOUR - DEFAUT CAPTEUR IW20</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_143</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H20 SCAMBIATORI - LIMITE SUPERIORE SUPERATO IW139</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O TEMPERATURE - HIGH LIMIT EXCEED IW139</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU ECHANGEUR A PLAQUE - LIMITE SUPERIEURE DEPASSEE IW139</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_144</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H20 SCAMBIATORI - LIMITE INFERIORE SUPERATO IW139</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O TEMPERATURE - LOW LIMIT EXCEED IW139</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU ECHANGEUR A PLAQUE - LIMITE INFERIEURE DEPASSEE IW139</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_145</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H20 SCAMBIATORI - FAULT SENSORE IW139</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O TEMPERATURE - SENSOR FAULT IW139</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU ECHANGEUR A PLAQUE - DEFAUT CAPTEUR IW139</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_146</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CAMERE - LIMITE SUPERIORE SUPERATO IW141</AlarmText_IT>
+    <AlarmText_EN>PROCESS CHAMBER H2O FLOW - HIGH LIMIT EXCEED IW141</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : DEBIT EAU - LIMITE SUPERIEURE DEPASSEE IW141</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_147</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CAMERE - LIMITE INFERIORE SUPERATO IW141</AlarmText_IT>
+    <AlarmText_EN>PROCESS CHAMBER H2O FLOW - LOW LIMIT EXCEED IW141</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : DEBIT EAU - LIMITE INFERIEURE DEPASSEE IW141</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_148</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CAMERE - FAULT SENSORE IW141</AlarmText_IT>
+    <AlarmText_EN>PROCESS CHAMBER H2O FLOW - SENSOR FAULT IW141</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : DEBIT EAU - DEFAUT CAPTEUR IW141</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_149</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O CAMERA PROCESSO - LIMITE SUPERIORE SUPERATO IW143</AlarmText_IT>
+    <AlarmText_EN>TEMPERATURA H2O CAMERA PROCESSO - HIGH LIMIT EXCEED IW143</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : TEMPERATURE EAU - LIMITE SUPERIEURE DEPASSEE IW143</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_150</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O CAMERA PROCESSO - LIMITE INFERIORE SUPERATO IW143</AlarmText_IT>
+    <AlarmText_EN>TEMPERATURA H2O CAMERA PROCESSO - LOW LIMIT EXCEED IW143</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : TEMPERATURE EAU - LIMITE INFERIEURE DEPASSEE IW143</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_151</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O CAMERA PROCESSO - FAULT SENSORE IW143</AlarmText_IT>
+    <AlarmText_EN>TEMPERATURA H2O CAMERA PROCESSO - SENSOR FAULT IW143</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : TEMPERATURE EAU - DEFAUT CAPTEUR IW143</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_152</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O FILIERA - LIMITE SUPERIORE SUPERATO IW145</AlarmText_IT>
+    <AlarmText_EN>DIE H2O FLOW - HIGH LIMIT EXCEED IW145</AlarmText_EN>
+    <AlarmText_FR>DEBIT EAU FILIERE - LIMITE SUPERIEURE DEPASSEE IW145</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_153</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O FILIERA - LIMITE INFERIORE SUPERATO IW145</AlarmText_IT>
+    <AlarmText_EN>DIE H2O FLOW - LOW LIMIT EXCEED IW145</AlarmText_EN>
+    <AlarmText_FR>DEBIT EAU FILIERE - LIMITE INFERIEURE DEPASSEE IW145</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_154</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O FILIERA - FAULT SENSORE IW145</AlarmText_IT>
+    <AlarmText_EN>DIE H2O FLOW - SENSOR FAULT IW145</AlarmText_EN>
+    <AlarmText_FR>DEBIT EAU FILIERE - DEFAUT CAPTEUR IW145</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_155</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O FILIERA - LIMITE SUPERIORE SUPERATO IW147</AlarmText_IT>
+    <AlarmText_EN>DIE H20 TEMPERATURE - HIGH LIMIT EXCEED IW147</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU FILIERE - LIMITE SUPERIEURE DEPASSEE IW147</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_156</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O FILIERA - LIMITE INFERIORE SUPERATO IW147</AlarmText_IT>
+    <AlarmText_EN>DIE H20 TEMPERATURE - LOW LIMIT EXCEED IW147</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU FILIERE - LIMITE INFERIEURE DEPASSEE IW147</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_157</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O FILIERA - FAULT SENSORE IW147</AlarmText_IT>
+    <AlarmText_EN>DIE H20 TEMPERATURE - SENSOR FAULT IW147</AlarmText_EN>
+    <AlarmText_FR>TEMPERATURE EAU FILIERE - DEFAUT CAPTEUR IW147</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_158</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O RAFFREDDAMENTO BARRA - LIMITE SUPERIORE SUPERATO IW149</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - HIGH LIMIT EXCEED IW149</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - LIMITE SUPERIEURE DEPASSEE IW149</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_159</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O RAFFREDDAMENTO BARRA - LIMITE INFERIORE SUPERATO IW149</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - LOW LIMIT EXCEED IW149</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - LIMITE INFERIEURE DEPASSEE IW149</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_160</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O RAFFREDDAMENTO BARRA - FAULT SENSORE IW149</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - SENSOR FAULT IW149</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - DEFAUT CAPTEUR IW149</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_161</AlarmTag>
+    <AlarmText_IT>TC FILERA BASSA - LIMITE SUPERIORE SUPERATO IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - HIGH LIMIT EXCEED IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - LIMITE SUPERIEURE DEPASSEE IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_162</AlarmTag>
+    <AlarmText_IT>TC FILERA BASSA - LIMITE INFERIORE SUPERATO IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - LOW LIMIT EXCEED IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - LIMITE INFERIEURE DEPASSEE IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_163</AlarmTag>
+    <AlarmText_IT>TC FILERA BASSA - FAULT SENSORE IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - SENSOR FAULT IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - DEFAUT CAPTEUR IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_164</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI BARRA - LIMITE SUPERIORE SUPERATO IW153</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O FLOW - HIGH LIMIT EXCEED IW153</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : DEBIT EAU  - LIMITE SUPERIEURE DEPASSEE IW153</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_165</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI BARRA - LIMITE INFERIORE SUPERATO IW153</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O FLOW - LOW LIMIT EXCEED IW153</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : DEBIT EAU - LIMITE INFERIEURE DEPASSEE IW153</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_166</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI BARRA - FAULT SENSORE IW153</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O FLOW - SENSOR FAULT IW153</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : DEBIT EAU - DEFAUT CAPTEUR IW153</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_167</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O SCAMBIATORI BARRA - LIMITE SUPERIORE SUPERATO IW155</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O TEMPERATURE - HIGH LIMIT EXCEED IW155</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : TEMPERATURE EAU - LIMITE SUPERIEURE DEPASSEE IW155</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_168</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O SCAMBIATORI BARRA - LIMITE INFERIORE SUPERATO IW155</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O TEMPERATURE - LOW LIMIT EXCEED IW155</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : TEMPERATURE EAU - LIMITE INFERIEURE DEPASSEE IW155</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_169</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O SCAMBIATORI BARRA - FAULT SENSORE IW155</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN HEAT EXCHANGER H2O TEMPERATURE - SENSOR FAULT IW155</AlarmText_EN>
+    <AlarmText_FR>UNITE REFROIDISSEMENT EAU ARROSAGE BARRE : TEMPERATURE EAU - DEFAUT CAPTEUR IW155</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_170</AlarmTag>
+    <AlarmText_IT>LIVELLO TANICA H2O BARRA - LIMITE SUPERIORE SUPERATO IW157</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O TANK LEVEL - HIGH LIMIT EXCEED IW157</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : NIVEAU RESERVOIR EAU - LIMITE SUPERIEURE DEPASSEE IW157</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_171</AlarmTag>
+    <AlarmText_IT>LIVELLO TANICA H2O BARRA - LIMITE INFERIORE SUPERATO IW157</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O TANK LEVEL - LOW LIMIT EXCEED IW157</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : NIVEAU RESERVOIR EAU - LIMITE INFERIEURE DEPASSEE IW157</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_172</AlarmTag>
+    <AlarmText_IT>LIVELLO TANICA H2O BARRA - FAULT SENSORE IW157</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O TANK LEVEL - SENSOR FAULT IW157</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : NIVEAU RESERVOIR EAU - DEFAUT CAPTEUR IW157</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_173</AlarmTag>
+    <AlarmText_IT>PRESSIONE ARGON - LIMITE SUPERIORE SUPERATO IW159</AlarmText_IT>
+    <AlarmText_EN>ARGON IN PRESSURE - HIGH LIMIT EXCEED IW159</AlarmText_EN>
+    <AlarmText_FR>PRESSION ARGON - LIMITE SUPERIEURE DEPASSEE IW159</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_174</AlarmTag>
+    <AlarmText_IT>PRESSIONE ARGON - LIMITE INFERIORE SUPERATO IW159</AlarmText_IT>
+    <AlarmText_EN>ARGON IN PRESSURE - LOW LIMIT EXCEED IW159</AlarmText_EN>
+    <AlarmText_FR>PRESSION ARGON  - LIMITE INFERIEURE DEPASSEE IW159</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_175</AlarmTag>
+    <AlarmText_IT>PRESSIONE ARGON - FAULT SENSORE IW159</AlarmText_IT>
+    <AlarmText_EN>ARGON IN PRESSURE - SENSOR FAULT IW159</AlarmText_EN>
+    <AlarmText_FR>PRESSION ARGON  - DEFAUT CAPTEUR IW159</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_176</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI - LIMITE SUPERIORE SUPERATO IW137</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O FLOW - HIGH LIMIT EXCEED IW137</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU - LIMITE SUPERIEURE DEPASSEE IW137</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_177</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI - LIMITE INFERIORE SUPERATO IW137</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O FLOW - LOW LIMIT EXCEED IW137</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU - LIMITE INFERIEURE DEPASSEE IW137</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_178</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O SCAMBIATORI - FAULT SENSORE IW137</AlarmText_IT>
+    <AlarmText_EN>HEAT EXCHANGER H2O FLOW - SENSOR FAULT IW137</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU - DEFAUT CAPTEUR IW137</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_182</AlarmTag>
+    <AlarmText_IT>PIROMETRO - LIMITE SUPERIORE SUPERATO IW171</AlarmText_IT>
+    <AlarmText_EN>PYROMETER - LIMITE SUPERIORE SUPERATO IW171</AlarmText_EN>
+    <AlarmText_FR>PYROMETRE - LIMITE SUPERIEURE DEPASSEE IW171</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_183</AlarmTag>
+    <AlarmText_IT>PIROMETRO - LIMITE INFERIORE SUPERATO IW171</AlarmText_IT>
+    <AlarmText_EN>PYROMETER - LIMITE INFERIORE SUPERATO IW171</AlarmText_EN>
+    <AlarmText_FR>PYROMETRE - LIMITE INFERIEURE DEPASSEE IW171</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_184</AlarmTag>
+    <AlarmText_IT>PIROMETRO - FAULT SENSORE IW171</AlarmText_IT>
+    <AlarmText_EN>PYROMETER - FAULT SENSORE IW171</AlarmText_EN>
+    <AlarmText_FR>PYROMETRE - DEFAUT CAPTEUR IW171</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_185</AlarmTag>
+    <AlarmText_IT>TC FILERA MEDIA - LIMITE SUPERIORE SUPERATO IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - HIGH LIMIT EXCEED IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - LIMITE SUPERIEURE DEPASSEE IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_186</AlarmTag>
+    <AlarmText_IT>TC FILERA MEDIA - LIMITE INFERIORE SUPERATO IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - LOW LIMIT EXCEED IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - LIMITE INFERIEURE DEPASSEE IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_187</AlarmTag>
+    <AlarmText_IT>TC FILERA MEDIA - FAULT SENSORE IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - SENSOR FAULT IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - DEFAUT CAPTEUR IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_188</AlarmTag>
+    <AlarmText_IT>TC FILERA ALTA - LIMITE SUPERIORE SUPERATO IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - HIGH LIMIT EXCEED IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - LIMITE SUPERIEURE DEPASSEE IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_189</AlarmTag>
+    <AlarmText_IT>TC FILERA ALTA - LIMITE INFERIORE SUPERATO IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - LOW LIMIT EXCEED IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - LIMITE INFERIEURE DEPASSEE IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_190</AlarmTag>
+    <AlarmText_IT>TC FILERA ALTA - FAULT SENSORE IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - SENSOR FAULT IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - DEFAUT CAPTEUR IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_191</AlarmTag>
+    <AlarmText_IT>TC OTTURATORE - LIMITE SUPERIORE SUPERATO IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - HIGH LIMIT EXCEED IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - LIMITE SUPERIEURE DEPASSEE IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_192</AlarmTag>
+    <AlarmText_IT>TC OTTURATORE - LIMITE INFERIORE SUPERATO IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - LOW LIMIT EXCEED IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - LIMITE INFERIEURE DEPASSEE IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_193</AlarmTag>
+    <AlarmText_IT>TC OTTURATORE - FAULT SENSORE IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - SENSOR FAULT IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - DEFAUT CAPTEUR IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_194</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - LIMITE SUPERIORE SUPERATO IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - HIGH LIMIT EXCEED IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - LIMITE SUPERIEURE DEPASSEE IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_195</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - LIMITE INFERIORE SUPERATO IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - LOW LIMIT EXCEED IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - LIMITE INFERIEURE DEPASSEE IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_196</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - FAULT SENSORE IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - SENSOR FAULT IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - DEFAUT CAPTEUR IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_197</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - LIMITE SUPERIORE SUPERATO IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - HIGH LIMIT EXCEED IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - LIMITE SUPERIEURE DEPASSEE IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_198</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - LIMITE INFERIORE SUPERATO IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - LOW LIMIT EXCEED IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - LIMITE INFERIEURE DEPASSEE IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_199</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - FAULT SENSORE IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - SENSOR FAULT IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - DEFAUT CAPTEUR IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_200</AlarmTag>
+    <AlarmText_IT>CONDUCIBILITA H2O - LIMITE SUPERIORE SUPERATO IW24</AlarmText_IT>
+    <AlarmText_EN>H2O CONDUCTIVITY - HIGH LIMIT EXCEED IW24</AlarmText_EN>
+    <AlarmText_FR>CONDUCTIVITE EAU - LIMITE SUPERIEURE DEPASSEE IW24</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_201</AlarmTag>
+    <AlarmText_IT>CONDUCIBILITA H2O - LIMITE INFERIORE SUPERATO IW24</AlarmText_IT>
+    <AlarmText_EN>H2O CONDUCTIVITY - LOW LIMIT EXCEED IW24</AlarmText_EN>
+    <AlarmText_FR>CONDUCTIVITE EAU - LIMITE INFERIEURE DEPASSEE IW24</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_202</AlarmTag>
+    <AlarmText_IT>CONDUCIBILITA H2O - FAULT SENSORE IW24</AlarmText_IT>
+    <AlarmText_EN>H2O CONDUCTIVITY - SENSOR FAULT IW24</AlarmText_EN>
+    <AlarmText_FR>CONDUCTIVITE EAU - DEFAUT CAPTEUR IW24</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_203</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O LC RITORNO - LIMITE SUPERIORE SUPERATO IW22</AlarmText_IT>
+    <AlarmText_EN>LC H2O FLOW RETURN - HIGH LIMIT EXCEED IW22</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : DEBIT EAU RETOUR - LIMITE SUPERIEURE DEPASSEE IW22</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_205</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O LC RITORNO - FAULT SENSORE IW22</AlarmText_IT>
+    <AlarmText_EN>LC H2O FLOW RETURN - SENSOR FAULT IW22</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : DEBIT EAU RETOUR - DEFAUT CAPTEUR IW22</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_206</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O RAFFREDDAMENTO BARRA - LIMITE SUPERIORE SUPERATO IW151</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - HIGH LIMIT EXCEED IW151</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - LIMITE SUPERIEURE DEPASSEE IW151</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_207</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O RAFFREDDAMENTO BARRA - LIMITE INFERIORE SUPERATO IW151</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - LOW LIMIT EXCEED IW151</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - LIMITE INFERIEURE DEPASSEE IW151</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_208</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O RAFFREDDAMENTO BARRA - FAULT SENSORE IW151</AlarmText_IT>
+    <AlarmText_EN>BAR COOLDOWN H2O FLOW - SENSOR FAULT IW151</AlarmText_EN>
+    <AlarmText_FR>ARROSAGE BARRE : DEBIT EAU - DEFAUT CAPTEUR IW151</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_209</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CHILLER ROLEX - LIMITE SUPERIORE SUPERATO IW26</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O FLOW - HIGH LIMIT EXCEED IW26</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU FROIDE ROLEX- LIMITE SUPERIEURE DEPASSEE IW26</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_210</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CHILLER ROLEX - LIMITE INFERIORE SUPERATO IW26</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O FLOW - LOW LIMIT EXCEED IW26</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU FROIDE ROLEX- LIMITE INFERIEURE DEPASSEE IW26</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_211</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O CHILLER ROLEX - FAULT SENSORE IW26</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O FLOW - SENSOR FAULT IW26</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : DEBIT EAU FROIDE ROLEX- DEFAUT CAPTEUR IW26</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_212</AlarmTag>
+    <AlarmText_IT>temperatura H2O CHILLER ROLEX - LIMITE SUPERIORE SUPERATO IW28</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O TEMPERATURE - HIGH LIMIT EXCEED IW28</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : TEMPERATURE EAU FROIDE ROLEX- LIMITE SUPERIEURE DEPASSEE IW28</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_213</AlarmTag>
+    <AlarmText_IT>temperatura H2O CHILLER ROLEX - LIMITE INFERIORE SUPERATO IW28</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O TEMPERATURE - LOW LIMIT EXCEED IW28</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : TEMPERATURE EAU FROIDE ROLEX- LIMITE INFERIEURE DEPASSEE IW28</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_214</AlarmTag>
+    <AlarmText_IT>temperatura H2O CHILLER ROLEX - FAULT SENSORE IW28</AlarmText_IT>
+    <AlarmText_EN>CHILLER COLD H2O TEMPERATURE - SENSOR FAULT IW28</AlarmText_EN>
+    <AlarmText_FR>GROUPE FROID : TEMPERATURE EAU FROIDE ROLEX- DEFAUT CAPTEUR IW28</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_215</AlarmTag>
+    <AlarmText_IT>PRESSIONE CAMERA - LIMITE SUPERIORE SUPERATO IW165</AlarmText_IT>
+    <AlarmText_EN>CHAMBER PRESSURE - HIGH LIMIT EXCEED IW165</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : PRESSION - LIMITE SUPERIEURE DEPASSEE IW165</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_216</AlarmTag>
+    <AlarmText_IT>PRESSIONE CAMERA - LIMITE INFERIORE SUPERATO IW165</AlarmText_IT>
+    <AlarmText_EN>CHAMBER PRESSURE - LOW LIMIT EXCEED IW165</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : PRESSION - LIMITE INFERIEURE DEPASSEE IW165</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_217</AlarmTag>
+    <AlarmText_IT>PRESSIONE CAMERA - FAULT SENSORE IW165</AlarmText_IT>
+    <AlarmText_EN>CHAMBER PRESSURE - SENSOR FAULT IW165</AlarmText_EN>
+    <AlarmText_FR>ENCEINTE FOUR : PRESSION - DEFAUT CAPTEUR IW165</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_218</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC SEND - LIMITE SUPERIORE SUPERATO IW132</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE SEND - HIGH LIMIT EXCEED IW132</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU ENTREE - LIMITE SUPERIEURE DEPASSEE IW132</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_219</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC SEND - LIMITE INFERIORE SUPERATO IW132</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE SEND - LOW LIMIT EXCEED IW132</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU ENTREE - LIMITE INFERIEURE DEPASSEE IW132</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_220</AlarmTag>
+    <AlarmText_IT>TEMPERATURA H2O LC SEND - FAULT SENSORE IW132</AlarmText_IT>
+    <AlarmText_EN>LC H2O TEMPERATURE SEND - SENSOR FAULT IW132</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : TEMPERATURE EAU ENTREE - DEFAUT CAPTEUR IW132</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_221</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O LC MANDATA - LIMITE SUPERIORE SUPERATO IW130</AlarmText_IT>
+    <AlarmText_EN>FLUSSO H2O LC SEND - HIGH LIMIT EXCEED IW130</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : DEBIT EAU ENTREE - LIMITE SUPERIEURE DEPASSEE IW130</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_222</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O LC MANDATA - LIMITE INFERIORE SUPERATO IW130</AlarmText_IT>
+    <AlarmText_EN>FLUSSO H2O LC SEND - LOW LIMIT EXCEED IW130</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : DEBIT EAU ENTREE - LIMITE INFERIEURE DEPASSEE IW130</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_223</AlarmTag>
+    <AlarmText_IT>FLUSSO H2O LC MANDATA - FAULT SENSORE IW130</AlarmText_IT>
+    <AlarmText_EN>FLUSSO H2O LC SEND - SENSOR FAULT IW130</AlarmText_EN>
+    <AlarmText_FR>BOBINE ET CONDENSATEUR : DEBIT EAU ENTREE - DEFAUT CAPTEUR IW130</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_224</AlarmTag>
+    <AlarmText_IT>PRESSIONE AZOTO - LIMITE SUPERIORE SUPERATO IW167</AlarmText_IT>
+    <AlarmText_EN>NITROGEN IN PRESSURE - HIGH LIMIT EXCEED IW167</AlarmText_EN>
+    <AlarmText_FR>PRESSION AZOTE - LIMITE SUPERIEURE DEPASSEE IW167</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_225</AlarmTag>
+    <AlarmText_IT>PRESSIONE AZOTO - LIMITE INFERIORE SUPERATO IW167</AlarmText_IT>
+    <AlarmText_EN>NITROGEN IN PRESSURE - LOW LIMIT EXCEED IW167</AlarmText_EN>
+    <AlarmText_FR>PRESSION AZOTE  - LIMITE INFERIEURE DEPASSEE IW167</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_226</AlarmTag>
+    <AlarmText_IT>PRESSIONE AZOTO - FAULT SENSORE IW167</AlarmText_IT>
+    <AlarmText_EN>NITROGEN IN PRESSURE - SENSOR FAULT IW167</AlarmText_EN>
+    <AlarmText_FR>PRESSION AZOTE  - DEFAUT CAPTEUR IW167</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_227</AlarmTag>
+    <AlarmText_IT>PRESSIONE FORMIA GAS - LIMITE SUPERIORE SUPERATO IW173 </AlarmText_IT>
+    <AlarmText_EN>FORMIA GAS IN PRESSURE - HIGH LIMIT EXCEED IW173 </AlarmText_EN>
+    <AlarmText_FR>PRESSION FORMIERGAS - LIMITE SUPERIEURE DEPASSEE IW173 </AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_228</AlarmTag>
+    <AlarmText_IT>PRESSIONE FORMIA GAS - LIMITE INFERIORE SUPERATO IW173 </AlarmText_IT>
+    <AlarmText_EN>FORMIA GAS IN PRESSURE - LOW LIMIT EXCEED IW173</AlarmText_EN>
+    <AlarmText_FR>PRESSION FORMIERGAS  - LIMITE INFERIEURE DEPASSEE IW173</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_229</AlarmTag>
+    <AlarmText_IT>PRESSIONE FORMIA GAS - FAULT SENSORE IW173 </AlarmText_IT>
+    <AlarmText_EN>FORMIA GAS IN PRESSURE - SENSOR FAULT IW173 </AlarmText_EN>
+    <AlarmText_FR>PRESSION FORMIERGAS  - DEFAUT CAPTEUR IW173 </AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_230</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - DICREPANZA IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - DISCREPANCY IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - VALEUR ANORMALE IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_231</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - PICCO RILEVATO IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - PEAK DETECTED IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - PIC DETECTE IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_232</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO ALTA - TRACCIATO NO OK IW121</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE HIGH - PATH NO OK IW121</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET HAUT - FORME COURBE ANORMALE IW121</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_233</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - DICREPANZA IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - DISCREPANCY IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - VALEUR ANORMALE IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_234</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - PICCO RILEVATO IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - PEAK DETECTED IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - PIC DETECTE IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_235</AlarmTag>
+    <AlarmText_IT>TC CROGIOLO BASSA - TRACCIATO NO OK IW123</AlarmText_IT>
+    <AlarmText_EN>TC CRUCIBLE LOW - PATH NO OK IW123</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE CREUSET BAS - FORME COURBE ANORMALE IW123</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_236</AlarmTag>
+    <AlarmText_IT>TC OTTURATORE - DICREPANZA IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - DISCREPANCY IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - VALEUR ANORMALE IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_237</AlarmTag>
+    <AlarmText_IT> TC OTTURATORE - PICCO RILEVATO IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - PEAK DETECTED IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - PIC DETECTE IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_238</AlarmTag>
+    <AlarmText_IT>TC OTTURATORE - TRACCIATO NO OK IW125</AlarmText_IT>
+    <AlarmText_EN>TC STOPPER - PATH NO OK IW125</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE QUENOUILLE - FORME COURBE ANORMALE IW125</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_239</AlarmTag>
+    <AlarmText_IT>TC FILIERA ALTA - DICREPANZA IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - DISCREPANCY IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - VALEUR ANORMALE IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_240</AlarmTag>
+    <AlarmText_IT>TC FILIERA ALTA - PICCO RILEVATO IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - PEAK DETECTED IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - PIC DETECTE IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_241</AlarmTag>
+    <AlarmText_IT>TC FILIERA ALTA - TRACCIATO NO OK IW127</AlarmText_IT>
+    <AlarmText_EN>TC DIE HIGH - PATH NO OK IW127</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE HAUT - FORME COURBE ANORMALE IW127</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_242</AlarmTag>
+    <AlarmText_IT>TC FILIERA MEDIA - DICREPANZA IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - DISCREPANCY IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - VALEUR ANORMALE IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_243</AlarmTag>
+    <AlarmText_IT>TC FILIERA MEDIA - PICCO RILEVATO IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - PEAK DETECTED IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - PIC DETECTE IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_244</AlarmTag>
+    <AlarmText_IT>TC FILIERA MEDIA - TRACCIATO NO OK IW129</AlarmText_IT>
+    <AlarmText_EN>TC DIE MEDIUM - PATH NO OK IW129</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE MILIEU - FORME COURBE ANORMALE IW129</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_245</AlarmTag>
+    <AlarmText_IT>TC FILIERA BASSA - DICREPANZA IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - DISCREPANCY IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - VALEUR ANORMALE IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_246</AlarmTag>
+    <AlarmText_IT>TC FILIERA BASSA - PICCO RILEVATO IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - PEAK DETECTED IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - PIC DETECTE IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_247</AlarmTag>
+    <AlarmText_IT>TC FILIERA BASSA - TRACCIATO NO OK IW131</AlarmText_IT>
+    <AlarmText_EN>TC DIE LOW - PATH NO OK IW131</AlarmText_EN>
+    <AlarmText_FR>THERMOCOUPLE FILIERE BAS - FORME COURBE ANORMALE IW131</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_250</AlarmTag>
+    <AlarmText_IT>TERMOSTATO QC POWER - TEMPERATURA ELEVATA I58.0</AlarmText_IT>
+    <AlarmText_EN>QC POWER THERMOSTAT - HIGH TEMPERATURE I58.0</AlarmText_EN>
+    <AlarmText_FR>THERMOSTAT ARMOIRE DE PUISSANCE- TEMPERATURE TROP HAUTE I58.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_251</AlarmTag>
+    <AlarmText_IT>TERMOSTATO QC TCC - TEMPERATURA ELEVATA I177.6</AlarmText_IT>
+    <AlarmText_EN>QC TCC THERMOSTAT - HIGH TEMPERATURE I177.6</AlarmText_EN>
+    <AlarmText_FR>THERMOSTAT ARMOIRE TCC - TEMPERATURE TROP HAUTE I177.6</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_252</AlarmTag>
+    <AlarmText_IT>TERMOSTATO QC UPS - TEMPERATURA ELEVATA I36.0</AlarmText_IT>
+    <AlarmText_EN>QC UPS THERMOSTAT - HIGH TEMPERATURE I36.0</AlarmText_EN>
+    <AlarmText_FR>THERMOSTAT ARMOIRE UPS - TEMPERATURE TROP HAUTE I36.0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_260</AlarmTag>
+    <AlarmText_IT>COMANDI MANUALI - ATTIVI</AlarmText_IT>
+    <AlarmText_EN>MANUAL COMMANDS - ACTIVE</AlarmText_EN>
+    <AlarmText_FR>MODE MANUEL - ACTIF</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_261</AlarmTag>
+    <AlarmText_IT>COMANDI MANUALI - TGEN ATTIVI</AlarmText_IT>
+    <AlarmText_EN>MANUAL COMMANDS - TGEN ACTIVE</AlarmText_EN>
+    <AlarmText_FR>MODE MANUEL GENERATEUR - ACTIF</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_270</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER ASPIRAZIONE - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER AIR SUCTION - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR ASPIRATION AIR - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_271</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER ASPIRAZIONE - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER AIR SUCTION - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR ASPIRATION AIR - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_272</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER ASPIRAZIONE - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER AIR SUCTION - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR ASPIRATION AIR - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_273</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER ASPIRAZIONE - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER AIR SUCTION - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR ASPIRATION AIR- DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_274</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER ASPIRAZIONE - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER AIR SUCTION - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR ASPIRATION AIR - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_275</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA MANDATA - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN SEND - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE ALLER - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_276</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA MANDATA - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN SEND - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE ALLER - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_277</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA MANDATA - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN SEND - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE ALLER - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_278</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA MANDATA - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN SEND - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE ALLER - DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_279</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA MANDATA - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN SEND - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE ALLER - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_280</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA RITORNO - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN RETURN - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE RETOUR - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_281</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA RITORNO - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN RETURN - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE RETOUR - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_282</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA RITORNO - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN RETURN - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE RETOUR - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_283</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA RITORNO - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN RETURN - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE RETOUR - DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_284</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER RAFFREDDAMENTO BARRA RITORNO - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER BAR COOLDOWN RETURN - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE ARROSAGE BARRE RETOUR - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_285</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER TRONCATRICE - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER SHEAR - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR CISAILLE - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_286</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER TRONCATRICE - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER SHEAR - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR CISAILLE - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_287</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER TRONCATRICE - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER SHEAR - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR CISAILLE - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_288</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER TRONCATRICE - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER SHEAR - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR CISAILLE - DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_289</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER TRONCATRICE - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER SHEAR - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR CISAILLE - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_290</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER POMPA VUOTO - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER VACUUM PUMP - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE A VIDE - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_291</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER POMPA VUOTO - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER VACUUM PUMP - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE A VIDE - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_292</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER POMPA VUOTO - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER VACUUM PUMP - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE A VIDE - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_293</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER POMPA VUOTO - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER VACUUM PUMP - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE A VIDE - DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_294</AlarmTag>
+    <AlarmText_IT>MOTOR STARTER POMPA VUOTO - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>MOTOR STARTER VACUUM PUMP - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE MOTEUR POMPE A VIDE - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_295</AlarmTag>
+    <AlarmText_IT>STARTER LAMPADA UV - OVERLOAD</AlarmText_IT>
+    <AlarmText_EN>STARTER UV LAMP - OVERLOAD</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE LAMPE UV - SURCHARGE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_296</AlarmTag>
+    <AlarmText_IT>STARTER LAMPADA UV - CURRENT LIMIT</AlarmText_IT>
+    <AlarmText_EN>STARTER UV LAMP - CURRENT LIMIT</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE LAMPE UV - LIMITE COURANT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_297</AlarmTag>
+    <AlarmText_IT>STARTER LAMPADA UV - CURRENT 0</AlarmText_IT>
+    <AlarmText_EN>STARTER UV LAMP - CURRENT 0</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE LAMPE UV - COURANT 0</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_298</AlarmTag>
+    <AlarmText_IT>STARTER LAMPADA UV - PHASE ASYMMETRY</AlarmText_IT>
+    <AlarmText_EN>STARTER UV LAMP - PHASE ASYMMETRY</AlarmText_EN>
+    <AlarmText_FR>DEMARRAGE LAMPE UV - DESEQUILIBRE DES PHASES</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_299</AlarmTag>
+    <AlarmText_IT>STARTER LAMPADA UV - OVERTEMPERATURE</AlarmText_IT>
+    <AlarmText_EN>STARTER UV LAMP - OVERTEMPERATURE</AlarmText_EN>
+    <AlarmText_FR>STARTER UV LAMP - SURCHAUFFE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_310</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC1</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC1</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_311</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC2</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC2</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_312</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC3</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC3</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_313</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC 1 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC 1 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC 1 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_314</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC 2 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC 2 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC 2 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_315</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TC 3 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TC 3 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TC 3 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_316</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL NO VALID TC SOURCE</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL NO VALID TC SOURCE</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL NO VALID TC SOURCE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_317</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL PID OVERSHOT</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL PID OVERSHOT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL PID OVERSHOT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_318</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL PID UNDERSHOT</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL PID UNDERSHOT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL PID UNDERSHOT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_319</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TIME OUT MODBUS</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TIME OUT MODBUS</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TIME OUT MODBUS</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_320</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL MODBUS ERROR</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL MODBUS ERROR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL MODBUS ERROR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_321</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL COM LOAD ERROR</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL COM LOAD ERROR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL COM LOAD ERROR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_322</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL LIFEBIT</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL LIFEBIT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL LIFEBIT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_323</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL CAP TYPE</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL CAP TYPE</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL CAP TYPE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_324</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL FDB</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL FDB</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL FDB</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_325</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL TMB</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL TMB</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL TMB</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_326</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL CHI</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL CHI</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL CHI</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_327</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL EPR</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL EPR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL EPR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_328</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL SON</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL SON</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL SON</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_329</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL PHA</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL PHA</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL PHA</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_330</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL AIR</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL AIR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL AIR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_331</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL FLW</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL FLW</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL FLW</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_332</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL WAT</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL WAT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL WAT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_333</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL FTM</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL FTM</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL FTM</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_334</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL NOFLASK</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL NOFLASK</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL NOFLASK</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_335</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL OIL PUMP</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL OIL PUMP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL OIL PUMP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_336</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL SECURITY</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL SECURITY</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL SECURITY</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_337</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL SNU</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL SNU</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL SNU</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_338</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL SCP</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL SCP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL SCP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_339</AlarmTag>
+    <AlarmText_IT>TGEN CROGIOLO - AL ICP</AlarmText_IT>
+    <AlarmText_EN>TGEN CRUCIBLE - AL ICP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION CREUSET - AL ICP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_350</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC1</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC1</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC1</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_351</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC2</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC2</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_352</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC3</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC3</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_353</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC 1 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC 1 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC 1 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_354</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC 2 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC 2 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC 2 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_355</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TC 3 IS LIMITATION</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TC 3 IS LIMITATION</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TC 3 IS LIMITATION</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_356</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL NO VALID TC SOURCE</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL NO VALID TC SOURCE</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL NO VALID TC SOURCE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_357</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL PID OVERSHOT</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL PID OVERSHOT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL PID OVERSHOT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_358</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL PID UNDERSHOT</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL PID UNDERSHOT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL PID UNDERSHOT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_359</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TIME OUT MODBUS</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TIME OUT MODBUS</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TIME OUT MODBUS</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_360</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL MODBUS ERROR</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL MODBUS ERROR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL MODBUS ERROR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_361</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL COM LOAD ERROR</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL COM LOAD ERROR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL COM LOAD ERROR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_362</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL LIFEBIT</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL LIFEBIT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL LIFEBIT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_363</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL CAP TYPE</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL CAP TYPE</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL CAP TYPE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_364</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL FDB</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL FDB</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL FDB</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_365</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL TMB</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL TMB</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL TMB</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_366</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL CHI</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL CHI</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL CHI</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_367</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL EPR</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL EPR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL EPR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_368</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL SON</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL SON</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL SON</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_369</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL PHA</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL PHA</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL PHA</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_370</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL AIR</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL AIR</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL AIR</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_371</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL FLW</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL FLW</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL FLW</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_372</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL WAT</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL WAT</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL WAT</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_373</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL FTM</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL FTM</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL FTM</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_374</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL NOFLASK</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL NOFLASK</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL NOFLASK</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_375</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL OIL PUMP</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL OIL PUMP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL OIL PUMP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_376</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL SECURITY</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL SECURITY</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL SECURITY</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_377</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL SNU</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL SNU</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL SNU</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_378</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL SCP</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL SCP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL SCP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_379</AlarmTag>
+    <AlarmText_IT>TGEN DIE - AL ICP</AlarmText_IT>
+    <AlarmText_EN>TGEN DIE - AL ICP</AlarmText_EN>
+    <AlarmText_FR>GENERATEUR INDUCTION FILIERE - AL ICP</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_380</AlarmTag>
+    <AlarmText_IT>PROCESSO - AL INCOERENZA T1 T2</AlarmText_IT>
+    <AlarmText_EN>PROCESS - AL INCORERNCE T1 T2</AlarmText_EN>
+    <AlarmText_FR>PROCESS - AL INCOHÉRENCE T1 T2</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_381</AlarmTag>
+    <AlarmText_IT>PROCESSO - AL INCOERENZA T1 T3</AlarmText_IT>
+    <AlarmText_EN>PROCESS - AL INCORERNCE T1 T3</AlarmText_EN>
+    <AlarmText_FR>PROCESS - AL INCOHÉRENCE T1 T3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_382</AlarmTag>
+    <AlarmText_IT>PROCESSO - AL INCOERENZA T2 T3</AlarmText_IT>
+    <AlarmText_EN>PROCESS - AL INCORERNCE T2 T3</AlarmText_EN>
+    <AlarmText_FR>PROCESS - AL INCOHÉRENCE T2 T3</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_383</AlarmTag>
+    <AlarmText_IT>PROCESSO - AL ELETTRODO</AlarmText_IT>
+    <AlarmText_EN>PROCESS - AL ELECTRODE</AlarmText_EN>
+    <AlarmText_FR>PROCESS - AL ELECTRODE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_385</AlarmTag>
+    <AlarmText_IT>NODE RED - NOT CONNECTED</AlarmText_IT>
+    <AlarmText_EN>NODE RED - NOT CONNECTED</AlarmText_EN>
+    <AlarmText_FR>NODE RED - NON CONNECTE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+  <Alarm>
+    <AlarmTag>Alarm_386</AlarmTag>
+    <AlarmText_IT>SQL - NOT CONNECTED</AlarmText_IT>
+    <AlarmText_EN>SQL - NOT CONNECTED</AlarmText_EN>
+    <AlarmText_FR>SQL - NON CONNECTE</AlarmText_FR>
+    <AlarmText_DE></AlarmText_DE>
+    <AlarmText_ES></AlarmText_ES>
+  </Alarm>
+</Config>

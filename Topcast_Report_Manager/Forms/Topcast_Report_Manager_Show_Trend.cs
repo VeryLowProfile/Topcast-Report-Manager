@@ -1,0 +1,480 @@
+﻿using System;
+using System.Data;
+using System.Resources;
+using System.Reflection;
+using System.Globalization;
+using System.Drawing;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using Topcast_Report_Manager.Workers;
+
+namespace Topcast_Report_Manager.Forms
+{
+    public partial class Topcast_Report_Manager_Show_Trend : Form
+    {
+        public Topcast_Report_Manager_Main MainForm { get; set; }
+        public List<(string colName, string selectedText, string plotColor)> ShowPivot { get; set; }
+        public List<(string colName, string selectedText, string plotColor)> HidePivot { get; set; }
+
+        ChartArea chartArea;
+        Legend legend;
+        Chart chart;
+        ToolTip tooltip;
+
+        Timer livePotTimer;
+
+        public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
+        {
+            InitializeComponent();
+
+            MainForm = mainForm;
+            MainForm.changeLenguage += buttonChangeLenguage_Click;
+
+            ShowPivot = new List<(string colName, string selectedText, string plotColor)>();
+            HidePivot = new List<(string colName, string selectedText, string plotColor)>();
+
+            chartArea = new ChartArea();
+            legend = new Legend();
+            chart = new Chart();
+            tooltip = new ToolTip();
+
+            livePotTimer = new Timer();
+            livePotTimer.Tick += LivePotTimer_Tick;
+        }
+
+        private void Topcast_Report_Manager_Show_Trend_Load(object sender, EventArgs e)
+        {
+            //Fill ID Combobox
+            comboBoxIDList.Items.AddRange(Topcast_Report_Manager_Main.SelectedData.SelectedIDs.ToArray());
+            comboBoxIDList.Text = comboBoxIDList.Items[0].ToString();
+
+            //Set Current Lenguage
+            ChangeLenguage();
+
+            //Fill ListBoxes 
+            Fillpivot();
+            FillList();
+            SetButtonsVisibility();
+
+            //Init Chart
+            chartArea.CursorX.IsUserEnabled = true;
+            chartArea.CursorX.IsUserSelectionEnabled = true;
+            chartArea.CursorX.IntervalType = DateTimeIntervalType.Seconds;
+            chartArea.CursorX.LineColor = Color.Gray;
+            chartArea.CursorX.LineWidth = 2;
+            chartArea.CursorX.LineDashStyle = ChartDashStyle.Dash;
+
+            chartArea.CursorY.IsUserEnabled = true;
+            chartArea.CursorY.IsUserSelectionEnabled = true;
+            chartArea.CursorY.LineColor = Color.Gray;
+            chartArea.CursorY.LineWidth = 2;
+            chartArea.CursorY.LineDashStyle = ChartDashStyle.Dash;
+
+            chartArea.BackColor = panelPlot.BackColor;
+
+            chartArea.AxisX.IntervalType = DateTimeIntervalType.Auto;
+            chartArea.AxisX.ScaleView.Zoomable = true;
+            chartArea.AxisX.ScrollBar.Enabled = true;
+            chartArea.AxisX.ScrollBar.IsPositionedInside = false;
+            chartArea.AxisX.ScrollBar.Size = 20;
+            chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.All;
+            chartArea.AxisX.ScrollBar.LineColor = Color.LightGray;
+            chartArea.AxisX.ScrollBar.BackColor = Color.LightGray;
+            chartArea.AxisX.ScrollBar.ButtonColor = Color.Gray;
+            chartArea.AxisX.MajorGrid.LineColor = Color.LightGray;
+            chartArea.AxisX.LineColor = Color.LightGray;
+            chartArea.AxisX.InterlacedColor = Color.LightGray;
+            chartArea.AxisX.TitleForeColor = Color.LightGray;
+
+            chartArea.AxisY.ScaleView.Zoomable = true;
+            chartArea.AxisY.ScrollBar.Enabled = true;
+            chartArea.AxisY.ScrollBar.IsPositionedInside = false;
+            chartArea.AxisY.ScrollBar.Size = 20;
+            chartArea.AxisY.ScrollBar.ButtonStyle = ScrollBarButtonStyles.All;
+            chartArea.AxisY.ScrollBar.LineColor = Color.LightGray;
+            chartArea.AxisY.ScrollBar.BackColor = Color.LightGray;
+            chartArea.AxisY.ScrollBar.ButtonColor = Color.Gray;
+            chartArea.AxisY.MajorGrid.LineColor = Color.LightGray;
+            chartArea.AxisY.LineColor = Color.LightGray;
+            chartArea.AxisY.InterlacedColor = Color.LightGray;
+            chartArea.AxisY.TitleForeColor = Color.LightGray;
+
+            legend.BackColor = panelPlot.BackColor;
+
+            chart.BackColor = panelPlot.BackColor;
+            chart.Dock = DockStyle.Fill;
+            chart.ChartAreas.Add(chartArea);
+            chart.Legends.Add(legend);
+            chart.MouseMove += Chart_MouseMove;
+
+            //Add Chart to Panel
+            panelPlot.Controls.Add(chart);
+
+            //Init Timer
+            livePotTimer.Interval = 2000;
+
+            //Trend Control button
+            buttonPlay.Enabled = false;
+            buttonPause.Enabled = false;
+            buttonZoomIn.Enabled = false;
+            buttonZoomOut.Enabled = false;
+            buttonTakePicture.Enabled = false;
+            buttonPlay.BackColor = default;
+            buttonPause.BackColor = default;
+            buttonZoomIn.BackColor = default;
+            buttonZoomOut.BackColor = default;
+            buttonTakePicture.BackColor = default;
+        }
+
+        private void Chart_MouseMove(object sender, MouseEventArgs e)        
+        {
+            var pos = e.Location;
+
+            var results = chart.HitTest(pos.X, pos.Y, false, ChartElementType.DataPoint);
+
+            if (results != null)
+            {
+                if (results[0].ChartElementType == ChartElementType.DataPoint)
+                {
+                    var prop = results[0].Object as DataPoint;
+                    if (prop != null)
+                    {
+                        tooltip.Show("VALUE = " + prop.YValues[0], this.chart, pos.X, pos.Y - 15);
+                    }
+                }
+            }
+        }
+
+        private void buttonShow_Click(object sender, EventArgs e)
+        {
+            int firtsSelectedIndex = 0;
+
+            if (listBoxHide.SelectedIndices != null)
+            {
+                firtsSelectedIndex = listBoxHide.SelectedIndices[0];
+
+                foreach (int index in listBoxHide.SelectedIndices)
+                {
+                    SetHideToShow(index);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No Item Selected", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            Fillpivot();
+            FillList();
+            SetListSelection(listBoxHide, firtsSelectedIndex);
+
+            SetButtonsVisibility();
+        }
+
+        private void buttonHide_Click(object sender, EventArgs e)
+        {
+            int firtsSelectedIndex = 0;
+
+            if (listBoxShow.SelectedIndices != null)
+            {
+                firtsSelectedIndex = listBoxShow.SelectedIndices[0];
+
+                foreach (int index in listBoxShow.SelectedIndices)
+                {
+                    SetShowToHide(index);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Item Selected", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            Fillpivot();
+            FillList();
+            SetListSelection(listBoxShow, firtsSelectedIndex);
+
+            SetButtonsVisibility();
+        }
+
+        private void buttonShowAll_Click(object sender, EventArgs e)
+        {
+            SetAllToShow();
+            SetButtonsVisibility();
+        }
+
+        private void buttonHideAll_Click(object sender, EventArgs e)
+        {
+            SetAllToHide();
+            SetButtonsVisibility();
+        }
+
+        private void buttonShowTrends_Click(object sender, EventArgs e)
+        {
+            plotChart();
+            livePotTimer.Stop();
+            buttonPlay.Enabled = true;
+            buttonPause.Enabled = false;
+            buttonPlay.BackColor = Color.ForestGreen;
+            buttonPause.BackColor = default;
+            buttonZoomIn.Enabled = true;
+            buttonZoomOut.Enabled = true;
+            buttonTakePicture.Enabled = true;
+        }
+
+        public void buttonChangeLenguage_Click(object sender, EventArgs e)
+        {
+            ChangeLenguage();
+            Fillpivot();
+            FillList();
+            SetButtonsVisibility();
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            if (!livePotTimer.Enabled)
+            {
+                livePotTimer.Start();
+                buttonPlay.Enabled = false;
+                buttonPause.Enabled = true;
+                buttonPlay.BackColor = default;
+                buttonPause.BackColor = Color.IndianRed;
+            }
+        }
+
+        private void buttonPause_Click(object sender, EventArgs e)
+        {
+            if (livePotTimer.Enabled)
+            {
+                livePotTimer.Stop();
+                buttonPause.Enabled = false;
+                buttonPlay.Enabled = true;
+                buttonPlay.BackColor = Color.ForestGreen;
+                buttonPause.BackColor = default;
+            }
+        }
+
+        private void LivePotTimer_Tick(object sender, EventArgs e)
+        {
+            plotChart();
+        }
+
+        private void buttonZoomIn_Click(object sender, EventArgs e)
+        {
+            double startX = chartArea.AxisX.PositionToValue(0);
+            double endX = chartArea.AxisX.PositionToValue(100);
+            chartArea.AxisX.ScaleView.Zoom((startX * 1.05), (endX * 0.95));
+        }
+
+        private void buttonZoomOut_Click(object sender, EventArgs e)
+        {
+            chartArea.AxisX.ScaleView.ZoomReset();
+            chartArea.AxisY.ScaleView.ZoomReset();
+        }
+
+        private void Topcast_Report_Manager_Show_Trend_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            livePotTimer.Stop();
+        }
+
+        private void Fillpivot()
+        {
+            ShowPivot.Clear();
+            HidePivot.Clear();
+
+            foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+            {
+                if (logVar.ColName != "BatchID" && logVar.ColName != "DateTime" && !logVar.ColName.Contains("String") && logVar.PlotColor != "None")
+                {
+                    if (logVar.DefPlot == "True")
+                    {
+                        (string colName, string selectedText, string plotColor) pivot;
+                        pivot.colName = logVar.ColName;
+                        pivot.selectedText = logVar.SelectedText;
+                        pivot.plotColor = logVar.PlotColor;
+                        ShowPivot.Add(pivot);
+                    }
+                    else if (logVar.DefPlot == "False")
+                    {
+                        (string colName, string selectedText, string plotColor) pivot;
+                        pivot.colName = logVar.ColName;
+                        pivot.selectedText = logVar.SelectedText;
+                        pivot.plotColor = logVar.PlotColor;
+                        HidePivot.Add(pivot);
+                    }
+                }
+            }
+        }
+
+        private void FillList()
+        {
+            listBoxShow.Items.Clear();
+            listBoxHide.Items.Clear();
+
+            foreach (var pivot in ShowPivot)
+            {
+                foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+                {
+                    if (pivot.colName == logVar.ColName)
+                    {
+                        listBoxShow.Items.Add(pivot.selectedText);
+                    }
+                }
+            }
+
+            foreach (var pivot in HidePivot)
+            {
+                foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+                {
+                    if (pivot.colName == logVar.ColName)
+                    {
+                        listBoxHide.Items.Add(pivot.selectedText);
+                    }
+                }
+            }
+        }
+
+        private void SetListSelection(ListBox list, int selectedIndex)
+        {
+            if (selectedIndex < 0)
+            {
+                selectedIndex = 0;
+            }
+
+            list.SelectedIndex = selectedIndex - 1;
+        }
+
+        private void SetShowToHide(int selectedIndex)
+        {
+            foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+            {
+                if (logVar.ColName == ShowPivot[selectedIndex].colName)
+                {
+                    logVar.DefPlot = "False";
+                }
+            }
+        }
+
+        private void SetHideToShow(int selectedIndex)
+        {
+            foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+            {
+                if (logVar.ColName == HidePivot[selectedIndex].colName)
+                {
+                    logVar.DefPlot = "True";
+                }
+            }
+        }
+
+        private void SetAllToHide()
+        {
+            foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+            {
+                logVar.DefPlot = "False";
+            }
+
+            Fillpivot();
+            FillList();
+
+        }
+
+        private void SetAllToShow()
+        {
+            foreach (var logVar in Topcast_Report_Manager_Main.AppConfig.LogVarConfig.LogVar)
+            {
+                logVar.DefPlot = "True";
+            }
+
+            Fillpivot();
+            FillList();
+
+        }
+
+        private void SetButtonsVisibility()
+        {
+            if (ShowPivot.Count <= 0)
+            {
+                buttonHide.Visible = false;
+                buttonHideAll.Visible = false;
+                buttonShowTrends.Visible = false;
+            }
+            else
+            {
+                buttonHide.Visible = true;
+                buttonHideAll.Visible = true;
+                buttonShowTrends.Visible = true;
+            }
+            if (HidePivot.Count <= 0)
+            {
+                buttonShow.Visible = false;
+                buttonShowAll.Visible = false;
+            }
+            else
+            {
+                buttonShow.Visible = true;
+                buttonShowAll.Visible = true;
+            }
+        }
+
+        public async void plotChart()
+        {
+            string qry = SqlQryBuilder.BuildPlotQry(ShowPivot, Topcast_Report_Manager_Main.AppConfig, comboBoxIDList.Text);
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            chart.Series.Clear();
+
+            foreach (var pivot in ShowPivot)
+            {
+                Series series = new Series();
+                series.Name = pivot.selectedText;
+                series.Color = Color.FromName(pivot.plotColor);
+                series.ChartType = SeriesChartType.FastLine;
+                series.XValueType = ChartValueType.Time;
+
+                series.BorderWidth = 3;
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                   series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
+                }
+
+                chart.Series.Add(series);
+            }
+        }
+
+        public void ChangeLenguage()
+        {
+            ResourceManager resourceManager = new ResourceManager($"Topcast_Report_Manager.Properties.Resource", Assembly.GetExecutingAssembly());
+            CultureInfo ci = new CultureInfo(Topcast_Report_Manager_Main.AppConfig.GenConfig.DefLenguage);
+
+            labelSelectID.Text = resourceManager.GetString("LBL_SELECT_ID", ci);
+            buttonShow.Text = resourceManager.GetString("BTN_SHOW", ci);
+            buttonShowAll.Text = resourceManager.GetString("BTN_SHOW_ALL", ci);
+            buttonHideAll.Text = resourceManager.GetString("BTN_HIDE_ALL", ci);
+            buttonHide.Text = resourceManager.GetString("BTN_HIDE", ci);
+            buttonShowTrends.Text = resourceManager.GetString("BTN_SHOW_TRENDS", ci);
+        }
+
+        private void buttonTakePicture_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.SelectedPath = Topcast_Report_Manager_Main.AppConfig.GenConfig.DefReportPath;
+            DialogResult result = folderBrowserDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                string folderPath = folderBrowserDialog.SelectedPath + @"\" + "TrendImage_" + comboBoxIDList.Text + ".png";
+                chart.SaveImage(folderPath, ChartImageFormat.Png);
+            }
+        }
+    }
+}

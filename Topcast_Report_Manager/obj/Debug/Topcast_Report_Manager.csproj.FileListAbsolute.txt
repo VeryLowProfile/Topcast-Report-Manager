@@ -1,0 +1,70 @@
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.exe.config
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.exe
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.pdb
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Search.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resources.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.GenerateResource.cache
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.CoreCompileInputs.cache
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.exe
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.pdb
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Main.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Data.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Trend.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Drawing.Common.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.ValueTuple.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.ValueTuple.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.CopyComplete
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Report.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Alarms_Events.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\en\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.en.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\en\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.IT.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\IT\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\IT\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\DE\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\ES\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\FR\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.DE.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.ES.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.FR.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\DE\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\ES\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\FR\Topcast_Report_Manager.resources.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.AssemblyReference.cache
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.exe.config
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.exe
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\Topcast_Report_Manager.pdb
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\DE\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\EN\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\ES\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\FR\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\IT\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Drawing.Common.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.ValueTuple.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.ValueTuple.xml
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.AssemblyReference.cache
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Main.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Report.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Search.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Alarms_Events.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Data.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Show_Trend.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resources.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.DE.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.EN.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.ES.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.FR.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Properties.Resource.IT.resources
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.GenerateResource.cache
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.CoreCompileInputs.cache
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\DE\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\EN\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\ES\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\FR\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\IT\Topcast_Report_Manager.resources.dll
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.CopyComplete
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.exe
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.pdb
+C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.SuggestedBindingRedirects.cache
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.SuggestedBindingRedirects.cache

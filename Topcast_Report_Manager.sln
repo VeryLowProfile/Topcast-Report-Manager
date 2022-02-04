@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topcast_Report_Manager", "Topcast_Report_Manager\Topcast_Report_Manager.csproj", "{400BF817-5B07-48F4-9CD3-49D061AFC215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{400BF817-5B07-48F4-9CD3-49D061AFC215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400BF817-5B07-48F4-9CD3-49D061AFC215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400BF817-5B07-48F4-9CD3-49D061AFC215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400BF817-5B07-48F4-9CD3-49D061AFC215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B53D53F0-0EBF-4950-8584-B2C14F09AC30}
+	EndGlobalSection
+EndGlobal
