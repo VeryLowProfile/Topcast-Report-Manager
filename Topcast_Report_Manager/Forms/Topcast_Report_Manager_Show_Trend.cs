@@ -4,6 +4,7 @@ using System.Resources;
 using System.Reflection;
 using System.Globalization;
 using System.Drawing;
+using System.Threading;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -22,7 +23,7 @@ namespace Topcast_Report_Manager.Forms
         Chart chart;
         ToolTip tooltip;
 
-        Timer livePotTimer;
+        System.Windows.Forms.Timer livePotTimer;
 
         public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
         {
@@ -39,7 +40,7 @@ namespace Topcast_Report_Manager.Forms
             chart = new Chart();
             tooltip = new ToolTip();
 
-            livePotTimer = new Timer();
+            livePotTimer = new System.Windows.Forms.Timer();
             livePotTimer.Tick += LivePotTimer_Tick;
         }
 
