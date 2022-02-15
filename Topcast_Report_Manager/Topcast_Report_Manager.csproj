@@ -66,6 +66,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\cursorValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\cursorValue.Designer.cs">
+      <DependentUpon>cursorValue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\LogAlarm.cs" />
     <Compile Include="Data\AlarmsConfig.cs" />
     <Compile Include="Data\AppConfig.cs" />
@@ -148,6 +154,9 @@
     <Compile Include="Workers\FormVisualizationManagement.cs" />
     <Compile Include="Workers\SqlManagement.cs" />
     <Compile Include="Workers\SqlQryBuilder.cs" />
+    <EmbeddedResource Include="Controls\cursorValue.resx">
+      <DependentUpon>cursorValue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Topcast_Report_Manager_Main.resx">
       <DependentUpon>Topcast_Report_Manager_Main.cs</DependentUpon>
     </EmbeddedResource>

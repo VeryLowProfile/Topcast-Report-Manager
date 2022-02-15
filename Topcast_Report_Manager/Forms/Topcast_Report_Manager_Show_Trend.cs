@@ -4,11 +4,11 @@ using System.Resources;
 using System.Reflection;
 using System.Globalization;
 using System.Drawing;
-using System.Threading;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Topcast_Report_Manager.Workers;
+using Topcast_Report_Manager.Controls;
 
 namespace Topcast_Report_Manager.Forms
 {
@@ -19,33 +19,31 @@ namespace Topcast_Report_Manager.Forms
         public List<(string colName, string selectedText, string plotColor)> HidePivot { get; set; }
 
         ChartArea chartArea;
-        Legend legend;
         Chart chart;
         ToolTip tooltip;
 
-        System.Windows.Forms.Timer livePotTimer;
+        Timer livePotTimer;
 
         public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
         {
             InitializeComponent();
 
             MainForm = mainForm;
-            MainForm.changeLenguage += buttonChangeLenguage_Click;
 
             ShowPivot = new List<(string colName, string selectedText, string plotColor)>();
             HidePivot = new List<(string colName, string selectedText, string plotColor)>();
 
             chartArea = new ChartArea();
-            legend = new Legend();
             chart = new Chart();
             tooltip = new ToolTip();
 
-            livePotTimer = new System.Windows.Forms.Timer();
-            livePotTimer.Tick += LivePotTimer_Tick;
+            livePotTimer = new Timer();
         }
 
+
+
         private void Topcast_Report_Manager_Show_Trend_Load(object sender, EventArgs e)
-        {
+        { 
             //Fill ID Combobox
             comboBoxIDList.Items.AddRange(Topcast_Report_Manager_Main.SelectedData.SelectedIDs.ToArray());
             comboBoxIDList.Text = comboBoxIDList.Items[0].ToString();
@@ -101,12 +99,9 @@ namespace Topcast_Report_Manager.Forms
             chartArea.AxisY.InterlacedColor = Color.LightGray;
             chartArea.AxisY.TitleForeColor = Color.LightGray;
 
-            legend.BackColor = panelPlot.BackColor;
-
             chart.BackColor = panelPlot.BackColor;
             chart.Dock = DockStyle.Fill;
             chart.ChartAreas.Add(chartArea);
-            chart.Legends.Add(legend);
             chart.MouseMove += Chart_MouseMove;
 
             //Add Chart to Panel
@@ -126,10 +121,18 @@ namespace Topcast_Report_Manager.Forms
             buttonZoomIn.BackColor = default;
             buttonZoomOut.BackColor = default;
             buttonTakePicture.BackColor = default;
+
+            //Events Subscription
+            MainForm.changeLenguage += buttonChangeLenguage_Click;
+            livePotTimer.Tick += LivePotTimer_Tick;
+            chart.MouseDown += Chart_MouseDown;
+
         }
 
         private void Chart_MouseMove(object sender, MouseEventArgs e)        
         {
+            tooltip.Hide(chart);
+
             var pos = e.Location;
 
             var results = chart.HitTest(pos.X, pos.Y, false, ChartElementType.DataPoint);
@@ -139,12 +142,34 @@ namespace Topcast_Report_Manager.Forms
                 if (results[0].ChartElementType == ChartElementType.DataPoint)
                 {
                     var prop = results[0].Object as DataPoint;
+
                     if (prop != null)
                     {
                         tooltip.Show("VALUE = " + prop.YValues[0], this.chart, pos.X, pos.Y - 15);
                     }
                 }
             }
+        }
+
+        private void Chart_MouseDown(object sender, MouseEventArgs e)
+        {
+            foreach (cursorValue cursorValue in panelCursorValue.Controls)
+            {
+                cursorValue.updateCursorValue(calculateSeriesIndex(chartArea,cursorValue.Series,e.Location));
+            }
+        }
+
+        private int calculateSeriesIndex(ChartArea chartArea, Series series, Point point)
+        {
+            double index; 
+
+            var xAxis = chartArea.AxisX;
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
+
+            index = ((series.Points.Count / (xRight - xLeft)) * (point.X - xLeft));
+            
+            return (int)index;
         }
 
         private void buttonShow_Click(object sender, EventArgs e)
@@ -432,6 +457,7 @@ namespace Topcast_Report_Manager.Forms
             }
 
             chart.Series.Clear();
+            panelCursorValue.Controls.Clear();
 
             foreach (var pivot in ShowPivot)
             {
@@ -449,6 +475,12 @@ namespace Topcast_Report_Manager.Forms
                 }
 
                 chart.Series.Add(series);
+
+                //Add cursor value control with injected series as parameter
+                cursorValue cursorValue = new cursorValue(series);
+                cursorValue.Dock = DockStyle.Top;
+                panelCursorValue.Controls.Add(cursorValue);
+
             }
         }
 

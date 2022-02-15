@@ -50,6 +50,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonZoomIn = new System.Windows.Forms.Button();
             this.buttonPause = new System.Windows.Forms.Button();
             this.buttonPlay = new System.Windows.Forms.Button();
+            this.panelCursorValue = new System.Windows.Forms.Panel();
             this.panelSelectID.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanelVar.SuspendLayout();
@@ -92,9 +93,9 @@ namespace Topcast_Report_Manager.Forms
             // panelPlot
             // 
             this.panelPlot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPlot.Location = new System.Drawing.Point(3, 3);
+            this.panelPlot.Location = new System.Drawing.Point(205, 3);
             this.panelPlot.Name = "panelPlot";
-            this.panelPlot.Size = new System.Drawing.Size(718, 255);
+            this.panelPlot.Size = new System.Drawing.Size(516, 255);
             this.panelPlot.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -262,11 +263,13 @@ namespace Topcast_Report_Manager.Forms
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel2.Controls.Add(this.panelPlot, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panelTrendControls, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panelPlot, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panelTrendControls, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panelCursorValue, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 332);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -351,6 +354,15 @@ namespace Topcast_Report_Manager.Forms
             this.buttonPlay.UseVisualStyleBackColor = true;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
+            // panelCursorValue
+            // 
+            this.panelCursorValue.AutoScroll = true;
+            this.panelCursorValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCursorValue.Location = new System.Drawing.Point(3, 3);
+            this.panelCursorValue.Name = "panelCursorValue";
+            this.panelCursorValue.Size = new System.Drawing.Size(196, 255);
+            this.panelCursorValue.TabIndex = 6;
+            // 
             // Topcast_Report_Manager_Show_Trend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,5 +408,6 @@ namespace Topcast_Report_Manager.Forms
         private System.Windows.Forms.Button buttonZoomIn;
         private System.Windows.Forms.Button buttonZoomOut;
         private System.Windows.Forms.Button buttonTakePicture;
+        private System.Windows.Forms.Panel panelCursorValue;
     }
 }
