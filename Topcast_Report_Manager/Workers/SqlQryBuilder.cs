@@ -186,7 +186,7 @@ namespace Topcast_Report_Manager.Workers
             return stringBuilder.ToString();
         }
 
-        public static string BuildPlotQry(List<(string colName, string selectedText, string plotColor)> showPivot, AppConfig appConfig, string selectedID)
+        public static string BuildPlotQry(List<(string colName, string selectedText, string plotColor, string userUnit)> showPivot, AppConfig appConfig, string selectedID)
         {
             string tableName = "";
             string IDColName = "";

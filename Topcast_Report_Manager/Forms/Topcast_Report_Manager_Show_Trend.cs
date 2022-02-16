@@ -15,8 +15,8 @@ namespace Topcast_Report_Manager.Forms
     public partial class Topcast_Report_Manager_Show_Trend : Form
     {
         public Topcast_Report_Manager_Main MainForm { get; set; }
-        public List<(string colName, string selectedText, string plotColor)> ShowPivot { get; set; }
-        public List<(string colName, string selectedText, string plotColor)> HidePivot { get; set; }
+        public List<(string colName, string selectedText, string plotColor, string userUnit)> ShowPivot { get; set; }
+        public List<(string colName, string selectedText, string plotColor, string userUnit)> HidePivot { get; set; }
 
         ChartArea chartArea;
         Chart chart;
@@ -30,8 +30,8 @@ namespace Topcast_Report_Manager.Forms
 
             MainForm = mainForm;
 
-            ShowPivot = new List<(string colName, string selectedText, string plotColor)>();
-            HidePivot = new List<(string colName, string selectedText, string plotColor)>();
+            ShowPivot = new List<(string colName, string selectedText, string plotColor, string userUnit)>();
+            HidePivot = new List<(string colName, string selectedText, string plotColor, string userUnit)>();
 
             chartArea = new ChartArea();
             chart = new Chart();
@@ -160,7 +160,7 @@ namespace Topcast_Report_Manager.Forms
         {
             int firtsSelectedIndex = 0;
 
-            if (listBoxHide.SelectedIndices != null)
+            if (listBoxHide.SelectedIndices.Count != 0)
             {
                 firtsSelectedIndex = listBoxHide.SelectedIndices[0];
 
@@ -186,7 +186,7 @@ namespace Topcast_Report_Manager.Forms
         {
             int firtsSelectedIndex = 0;
 
-            if (listBoxShow.SelectedIndices != null)
+            if (listBoxShow.SelectedIndices.Count != 0)
             {
                 firtsSelectedIndex = listBoxShow.SelectedIndices[0];
 
@@ -293,6 +293,7 @@ namespace Topcast_Report_Manager.Forms
 
         private void buttonEnlarge_Click(object sender, EventArgs e)
         {
+            tableLayoutPanel.RowStyles[0].Height = 0;
             tableLayoutPanel.RowStyles[1].Height = 0;
             tableLayoutPanel.RowStyles[2].Height = 0;
             buttonEnlarge.Enabled = false;
@@ -301,6 +302,7 @@ namespace Topcast_Report_Manager.Forms
 
         private void buttonShrink_Click(object sender, EventArgs e)
         {
+            tableLayoutPanel.RowStyles[0].Height = 70;
             tableLayoutPanel.RowStyles[1].Height = 40;
             tableLayoutPanel.RowStyles[2].Height = 10;
             buttonEnlarge.Enabled = true;
@@ -323,18 +325,20 @@ namespace Topcast_Report_Manager.Forms
                 {
                     if (logVar.DefPlot == "True")
                     {
-                        (string colName, string selectedText, string plotColor) pivot;
+                        (string colName, string selectedText, string plotColor, string userUnit) pivot;
                         pivot.colName = logVar.ColName;
                         pivot.selectedText = logVar.SelectedText;
                         pivot.plotColor = logVar.PlotColor;
+                        pivot.userUnit = logVar.UserUnit;
                         ShowPivot.Add(pivot);
                     }
                     else if (logVar.DefPlot == "False")
                     {
-                        (string colName, string selectedText, string plotColor) pivot;
+                        (string colName, string selectedText, string plotColor, string userUnit) pivot;
                         pivot.colName = logVar.ColName;
                         pivot.selectedText = logVar.SelectedText;
                         pivot.plotColor = logVar.PlotColor;
+                        pivot.userUnit = logVar.UserUnit;
                         HidePivot.Add(pivot);
                     }
                 }
@@ -486,7 +490,7 @@ namespace Topcast_Report_Manager.Forms
                 chart.Series.Add(series);
 
                 //Add cursor value control with injected series as parameter
-                cursorValue cursorValue = new cursorValue(series);
+                cursorValue cursorValue = new cursorValue(series, pivot.userUnit);
                 cursorValue.Dock = DockStyle.Top;
                 panelCursorValue.Controls.Add(cursorValue);
 
@@ -511,8 +515,8 @@ namespace Topcast_Report_Manager.Forms
             double index = 0;
 
             var xAxis = chartArea.AxisX;
-            int xRight = (int)xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
-            int xLeft = (int)xAxis.ValueToPixelPosition(xAxis.Minimum);
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
 
             if (point.X >= xLeft && point.X <= xRight)
             {

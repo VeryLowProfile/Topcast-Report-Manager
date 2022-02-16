@@ -45,14 +45,14 @@ namespace Topcast_Report_Manager.Forms
             this.buttonHideAll = new System.Windows.Forms.Button();
             this.tableLayoutPanelPlot = new System.Windows.Forms.TableLayoutPanel();
             this.panelTrendControls = new System.Windows.Forms.Panel();
+            this.buttonShrink = new System.Windows.Forms.Button();
+            this.buttonEnlarge = new System.Windows.Forms.Button();
             this.buttonTakePicture = new System.Windows.Forms.Button();
             this.buttonZoomOut = new System.Windows.Forms.Button();
             this.buttonZoomIn = new System.Windows.Forms.Button();
             this.buttonPause = new System.Windows.Forms.Button();
             this.buttonPlay = new System.Windows.Forms.Button();
             this.panelCursorValue = new System.Windows.Forms.Panel();
-            this.buttonEnlarge = new System.Windows.Forms.Button();
-            this.buttonShrink = new System.Windows.Forms.Button();
             this.panelSelectID.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.tableLayoutPanelVar.SuspendLayout();
@@ -149,7 +149,7 @@ namespace Topcast_Report_Manager.Forms
             this.tableLayoutPanelVar.Name = "tableLayoutPanelVar";
             this.tableLayoutPanelVar.RowCount = 1;
             this.tableLayoutPanelVar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelVar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPanelVar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 297F));
             this.tableLayoutPanelVar.Size = new System.Drawing.Size(1037, 297);
             this.tableLayoutPanelVar.TabIndex = 5;
             // 
@@ -295,6 +295,32 @@ namespace Topcast_Report_Manager.Forms
             this.panelTrendControls.Size = new System.Drawing.Size(64, 380);
             this.panelTrendControls.TabIndex = 5;
             // 
+            // buttonShrink
+            // 
+            this.buttonShrink.AutoSize = true;
+            this.buttonShrink.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonShrink.ForeColor = System.Drawing.Color.Gray;
+            this.buttonShrink.Image = global::Topcast_Report_Manager.Properties.Resources._013_minimize;
+            this.buttonShrink.Location = new System.Drawing.Point(0, 300);
+            this.buttonShrink.Name = "buttonShrink";
+            this.buttonShrink.Size = new System.Drawing.Size(64, 50);
+            this.buttonShrink.TabIndex = 12;
+            this.buttonShrink.UseVisualStyleBackColor = true;
+            this.buttonShrink.Click += new System.EventHandler(this.buttonShrink_Click);
+            // 
+            // buttonEnlarge
+            // 
+            this.buttonEnlarge.AutoSize = true;
+            this.buttonEnlarge.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonEnlarge.ForeColor = System.Drawing.Color.Gray;
+            this.buttonEnlarge.Image = global::Topcast_Report_Manager.Properties.Resources._006_fullscreen;
+            this.buttonEnlarge.Location = new System.Drawing.Point(0, 250);
+            this.buttonEnlarge.Name = "buttonEnlarge";
+            this.buttonEnlarge.Size = new System.Drawing.Size(64, 50);
+            this.buttonEnlarge.TabIndex = 11;
+            this.buttonEnlarge.UseVisualStyleBackColor = true;
+            this.buttonEnlarge.Click += new System.EventHandler(this.buttonEnlarge_Click);
+            // 
             // buttonTakePicture
             // 
             this.buttonTakePicture.AutoSize = true;
@@ -360,37 +386,12 @@ namespace Topcast_Report_Manager.Forms
             // panelCursorValue
             // 
             this.panelCursorValue.AutoScroll = true;
+            this.panelCursorValue.BackColor = System.Drawing.Color.Gainsboro;
             this.panelCursorValue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCursorValue.Location = new System.Drawing.Point(3, 3);
             this.panelCursorValue.Name = "panelCursorValue";
             this.panelCursorValue.Size = new System.Drawing.Size(222, 380);
             this.panelCursorValue.TabIndex = 6;
-            // 
-            // buttonEnlarge
-            // 
-            this.buttonEnlarge.AutoSize = true;
-            this.buttonEnlarge.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonEnlarge.ForeColor = System.Drawing.Color.Gray;
-            this.buttonEnlarge.Image = global::Topcast_Report_Manager.Properties.Resources._006_fullscreen;
-            this.buttonEnlarge.Location = new System.Drawing.Point(0, 250);
-            this.buttonEnlarge.Name = "buttonEnlarge";
-            this.buttonEnlarge.Size = new System.Drawing.Size(64, 50);
-            this.buttonEnlarge.TabIndex = 11;
-            this.buttonEnlarge.UseVisualStyleBackColor = true;
-            this.buttonEnlarge.Click += new System.EventHandler(this.buttonEnlarge_Click);
-            // 
-            // buttonShrink
-            // 
-            this.buttonShrink.AutoSize = true;
-            this.buttonShrink.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonShrink.ForeColor = System.Drawing.Color.Gray;
-            this.buttonShrink.Image = global::Topcast_Report_Manager.Properties.Resources._013_minimize;
-            this.buttonShrink.Location = new System.Drawing.Point(0, 300);
-            this.buttonShrink.Name = "buttonShrink";
-            this.buttonShrink.Size = new System.Drawing.Size(64, 50);
-            this.buttonShrink.TabIndex = 12;
-            this.buttonShrink.UseVisualStyleBackColor = true;
-            this.buttonShrink.Click += new System.EventHandler(this.buttonShrink_Click);
             // 
             // Topcast_Report_Manager_Show_Trend
             // 

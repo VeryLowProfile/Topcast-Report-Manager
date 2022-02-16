@@ -147,6 +147,7 @@ namespace Topcast_Report_Manager.Data
                     logVar.DefPlot = element.Element("DefPlot").Value;
                     logVar.DefReport = element.Element("DefReport").Value;
                     logVar.PlotColor = element.Element("PlotColor").Value;
+                    logVar.UserUnit = element.Element("UserUnit").Value;
                     logVar.VarText_IT = element.Element("VarText_IT").Value;
                     logVar.VarText_EN = element.Element("VarText_EN").Value;
                     logVar.VarText_FR = element.Element("VarText_FR").Value;

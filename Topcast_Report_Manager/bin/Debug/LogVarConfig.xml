@@ -7,6 +7,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>SLITTAMENTO</VarText_IT>
     <VarText_EN>SKIDDING</VarText_EN>
     <VarText_FR>PATINAGE</VarText_FR>
@@ -20,6 +21,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>ELETTRODO</VarText_IT>
     <VarText_EN>ELECTRODE</VarText_EN>
     <VarText_FR>ELECTRODE</VarText_FR>
@@ -33,6 +35,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>TRONCATRICE ON</VarText_IT>
     <VarText_EN>SHEAR ON</VarText_EN>
     <VarText_FR>CISAILLE ON</VarText_FR>
@@ -46,6 +49,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>PLAY PAUSE DRAWING</VarText_IT>
     <VarText_EN>PLAY PAUSE DRAWING</VarText_EN>
     <VarText_FR>PAUSE EXTRACTION</VarText_FR>
@@ -59,6 +63,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>PLAY PAUSE CUTTING</VarText_IT>
     <VarText_EN>PLAY PAUSE CUTTING</VarText_EN>
     <VarText_FR>PAUSE COUPE</VarText_FR>
@@ -72,6 +77,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>POTENZA CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE POWER</VarText_EN>
     <VarText_FR>PUISSANCE CREUSET</VarText_FR>
@@ -85,6 +91,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Green</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO BOBINA CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE COIL FLOW</VarText_EN>
     <VarText_FR>DEBIT EAU BOBINE CREUSET</VarText_FR>
@@ -98,6 +105,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Purple</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMPERATURA BOBINA CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE COIL TEMP</VarText_EN>
     <VarText_FR>TEMP. EAU BOBINE CREUSET</VarText_FR>
@@ -111,6 +119,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Cyan</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>SETPOINT TEMP CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE TEMP SETPOINT</VarText_EN>
     <VarText_FR>CONSIGNE TEMPERATURE CREUSET</VarText_FR>
@@ -124,6 +133,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Fuchsia</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>SETPOINT POTENZA CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE POWER SETPOINT</VarText_EN>
     <VarText_FR>CONSIGNE PUISSANCE CREUSET</VarText_FR>
@@ -137,6 +147,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Lime</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>POTENZA FILIERA</VarText_IT>
     <VarText_EN>DIE POWER</VarText_EN>
     <VarText_FR>PUISSANCE FILIERE</VarText_FR>
@@ -150,6 +161,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Blue</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO BOBINA FILIERA</VarText_IT>
     <VarText_EN>DIE COIL FLOW</VarText_EN>
     <VarText_FR>DEBIT EAU BOBINE FILIERE</VarText_FR>
@@ -163,6 +175,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Yellow</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMPERATURA BOBINA FILIERA</VarText_IT>
     <VarText_EN>DIE COIL TEMP</VarText_EN>
     <VarText_FR>TEMP. EAU BOBINE FILIERE</VarText_FR>
@@ -176,6 +189,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Orange</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>SETPOINT TEMP FILIERA</VarText_IT>
     <VarText_EN>DIE TEMP SETPOINT</VarText_EN>
     <VarText_FR>CONSIGNE TEMPERATURE FILIERE</VarText_FR>
@@ -189,6 +203,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Brown</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>SETPOINT POTENZA FILIERA</VarText_IT>
     <VarText_EN>DIE POWER SETPOINT</VarText_EN>
     <VarText_FR>CONSIGNE PUISSANCE FILIERE</VarText_FR>
@@ -202,6 +217,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>CARICO POSIZIONAMENTO SEGA</VarText_IT>
     <VarText_EN>LOAD SAW POSITIONING</VarText_EN>
     <VarText_FR>COUPLE MOTEUR AVANCE COUPE</VarText_FR>
@@ -215,6 +231,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Green</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>POSIZIONE POSIZIONAMENTO SEGA</VarText_IT>
     <VarText_EN>POSITION SAW POSITIONING</VarText_EN>
     <VarText_FR>POSITION MOTEUR AVANCE COUPE</VarText_FR>
@@ -228,6 +245,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Purple</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>VELOCITA POSIZIONAMENTO SEGA</VarText_IT>
     <VarText_EN>SPEED SAW POSITIONING</VarText_EN>
     <VarText_FR>VITESSE D'AVANCE SCIE</VarText_FR>
@@ -241,6 +259,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Cyan</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>VELOCITA ROTAZIONE SEGA</VarText_IT>
     <VarText_EN>SPEED SAW ROTATION</VarText_EN>
     <VarText_FR>VITESSE ROTATION SCIE</VarText_FR>
@@ -254,6 +273,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Fuchsia</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>CARICO ROTAZIONE SEGA</VarText_IT>
     <VarText_EN>LOAD SAW ROTATION</VarText_EN>
     <VarText_FR>COUPLE MOTEUR SCIE</VarText_FR>
@@ -267,6 +287,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Lime</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>OTTURATORE</VarText_IT>
     <VarText_EN>STOPPER</VarText_EN>
     <VarText_FR>QUENOUILLE</VarText_FR>
@@ -280,6 +301,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Blue</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC CROGIOLO ALTA</VarText_IT>
     <VarText_EN>TC CRUCIBLE TOP</VarText_EN>
     <VarText_FR>THERMOCOUPLE CREUSET HAUT</VarText_FR>
@@ -293,6 +315,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Yellow</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC CROGIOLO BASSA</VarText_IT>
     <VarText_EN>TC CRUCIBLE LOW</VarText_EN>
     <VarText_FR>THERMOCOUPLE CREUSET BAS</VarText_FR>
@@ -306,6 +329,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Orange</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC OTTURATORE</VarText_IT>
     <VarText_EN>TC STOPPER</VarText_EN>
     <VarText_FR>THERMOCOUPLE QUENOUILLE</VarText_FR>
@@ -319,6 +343,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Brown</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC FILERA ALTA</VarText_IT>
     <VarText_EN>TC DIE TOP</VarText_EN>
     <VarText_FR>THERMOCOUPLE FILIERE HAUT</VarText_FR>
@@ -332,6 +357,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC FILERA MEDIA</VarText_IT>
     <VarText_EN>TC DIE MIDDLE</VarText_EN>
     <VarText_FR>THERMOCOUPLE FILIERE MILIEU</VarText_FR>
@@ -345,6 +371,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Green</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC FILERA BASSA</VarText_IT>
     <VarText_EN>TC DIE LOW</VarText_EN>
     <VarText_FR>THERMOCOUPLE FILIERE BAS</VarText_FR>
@@ -358,6 +385,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Purple</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TC TEST</VarText_IT>
     <VarText_EN>TC TEST</VarText_EN>
     <VarText_FR>THERMOCOUPLE FILIERE TEST</VarText_FR>
@@ -371,6 +399,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Fuchsia</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO H2O CAMERE</VarText_IT>
     <VarText_EN>FLOW H2O MELTING CHAMBER</VarText_EN>
     <VarText_FR>DEBIT EAU CHAMBRE FUSION</VarText_FR>
@@ -384,6 +413,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Lime</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO H2O FILIERA</VarText_IT>
     <VarText_EN>FLOW H2O DIE</VarText_EN>
     <VarText_FR>DEBIT EAU FILIERE</VarText_FR>
@@ -397,6 +427,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Blue</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO H2O SCAMBIATORI</VarText_IT>
     <VarText_EN>FLOW H2O EXCHANGER</VarText_EN>
     <VarText_FR>DEBIT EAU GROUPE FROID</VarText_FR>
@@ -410,6 +441,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Yellow</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO H2O ROLEX</VarText_IT>
     <VarText_EN>FLOW H2O ROLEX</VarText_EN>
     <VarText_FR>DEBIT EAU ROLEX</VarText_FR>
@@ -423,6 +455,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Orange</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO LC</VarText_IT>
     <VarText_EN>FLOW H2O LC</VarText_EN>
     <VarText_FR>DEBIT RETOUR EAU BOBINE ET CONDENSATEUR</VarText_FR>
@@ -436,6 +469,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Brown</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>FLUSSO LC MANDATA</VarText_IT>
     <VarText_EN>FLOW H2O LC SEND</VarText_EN>
     <VarText_FR>DEBIT ENTREE EAU BOBINE ET CONDENSATEUR</VarText_FR>
@@ -449,6 +483,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP H2O CAMERE</VarText_IT>
     <VarText_EN>TEMP H2O CHAMBER</VarText_EN>
     <VarText_FR>TEMP EAU CHAMBRE FUSION</VarText_FR>
@@ -462,6 +497,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Green</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP H2O FILIERA</VarText_IT>
     <VarText_EN>TEMP H2O DIE</VarText_EN>
     <VarText_FR>TEMP EAU FILIERE</VarText_FR>
@@ -475,6 +511,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Purple</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP H2O ROLEX</VarText_IT>
     <VarText_EN>TEMP H2O ROLEX</VarText_EN>
     <VarText_FR>TEMP EAU ROLEX</VarText_FR>
@@ -488,6 +525,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Cyan</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP H20 SCAMBIATORI</VarText_IT>
     <VarText_EN>TEMP H2O EXCHANGER</VarText_EN>
     <VarText_FR>TEMP EAU GROUPE FROID</VarText_FR>
@@ -501,6 +539,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Fuchsia</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP LC</VarText_IT>
     <VarText_EN>TEMP H2O LC</VarText_EN>
     <VarText_FR>TEMP RETOUR EAU BOBINE ET CONDENSATEUR</VarText_FR>
@@ -514,6 +553,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Lime</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP LC MANDATA</VarText_IT>
     <VarText_EN>TEMP H2O LC SEND</VarText_EN>
     <VarText_FR>TEMP ENTREE EAU BOBINE ET CONDENSATEUR</VarText_FR>
@@ -527,6 +567,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Blue</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>PRESSIONE CAMERA</VarText_IT>
     <VarText_EN>CHAMBER PRESSURE</VarText_EN>
     <VarText_FR>PRESSION CHAMBRE FUSION</VarText_FR>
@@ -540,6 +581,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Yellow</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>POSIZIONE ENCODER</VarText_IT>
     <VarText_EN>ENCODER POSITION</VarText_EN>
     <VarText_FR>POSITION CODEUR EXTRACTION</VarText_FR>
@@ -553,6 +595,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Orange</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>SKID MEASURED VALUE</VarText_IT>
     <VarText_EN>SKID MEASURED VALUE</VarText_EN>
     <VarText_FR>PATINAGE : DEPLACEMENT REEL</VarText_FR>
@@ -566,6 +609,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Brown</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP REF CROGIOLO</VarText_IT>
     <VarText_EN>CRUCIBLE REF TEMP</VarText_EN>
     <VarText_FR>TEMPERATURE MOYENNE CREUSET</VarText_FR>
@@ -579,6 +623,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>TEMP REF FILIERA</VarText_IT>
     <VarText_EN>DIE REF TEMP</VarText_EN>
     <VarText_FR>TEMPERATURE MOYENNE FILIERE</VarText_FR>
@@ -592,6 +637,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>TOTALE BARRA ESTRATTA</VarText_IT>
     <VarText_EN>TOTAL EXTRACTED BAR</VarText_EN>
     <VarText_FR>LONGUEUR TOTALE EXTRAITE</VarText_FR>
@@ -605,6 +651,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>STIMA METALLO ESTRATTO</VarText_IT>
     <VarText_EN>EXTRACTED METAL EXTIMATED</VarText_EN>
     <VarText_FR>ESTIMATION QUANTITE EXTRAITE</VarText_FR>
@@ -618,6 +665,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>BARRE PRODOTTE</VarText_IT>
     <VarText_EN>N PRODUCED BARS</VarText_EN>
     <VarText_FR>NOMBRE BARRES PRODUITES</VarText_FR>
@@ -631,6 +679,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>VELOCITA MEDIA ATTUALE</VarText_IT>
     <VarText_EN>ACTUAL SPEED</VarText_EN>
     <VarText_FR>VITESSE MOYENNE REELLE</VarText_FR>
@@ -644,6 +693,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>SET VELOCITA MEDIA</VarText_IT>
     <VarText_EN>SET AVARAGE SPEED</VarText_EN>
     <VarText_FR>CONSIGNE VITESSE</VarText_FR>
@@ -657,6 +707,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>N DOSAGGI 1 RIEMPIMENTO OF1</VarText_IT>
     <VarText_EN>N 1 DOSING ROTATION OF1</VarText_EN>
     <VarText_FR>NOMBRE DOSAGES REMPLISSAGE INITIAL OF1</VarText_FR>
@@ -670,6 +721,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>N DOSAGGI CONT RIEMPIMENTO OF1</VarText_IT>
     <VarText_EN>N CONT DOSING ROTATION OF1</VarText_EN>
     <VarText_FR>NOMBRE DOSAGES OF1</VarText_FR>
@@ -683,6 +735,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>N DOSAGGI 1 RIEMPIMENTO OF2</VarText_IT>
     <VarText_EN>N 1 DOSING ROTATION OF2</VarText_EN>
     <VarText_FR>NOMBRE DOSAGES REMPLISSAGE INITIAL OF2</VarText_FR>
@@ -696,6 +749,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>N DOSAGGI CONT RIEMPIMENTO OF2</VarText_IT>
     <VarText_EN>N CONT DOSING ROTATION OF2</VarText_EN>
     <VarText_FR>NOMBRE DOSAGES OF2</VarText_FR>
@@ -709,6 +763,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Red</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>O2 PPM</VarText_IT>
     <VarText_EN>O2 PPM</VarText_EN>
     <VarText_FR>O2 PPM</VarText_FR>
@@ -722,6 +777,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>Green</PlotColor>
+    <UserUnit>U.I.</UserUnit>
     <VarText_IT>STIMA METALLO IN PROCESSO</VarText_IT>
     <VarText_EN>ON PROCESS METAL EXTIMATION</VarText_EN>
     <VarText_FR>ESTIMATION METAL EN COURS DE PROCESS</VarText_FR>
@@ -735,6 +791,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>OF</VarText_IT>
     <VarText_EN>OF</VarText_EN>
     <VarText_FR>OF</VarText_FR>
@@ -748,6 +805,7 @@
     <DefPlot>False</DefPlot>
     <DefReport>False</DefReport>
     <PlotColor>None</PlotColor>
+    <UserUnit>None</UserUnit>
     <VarText_IT>DateTime</VarText_IT>
     <VarText_EN>DateTime</VarText_EN>
     <VarText_FR>DateTime</VarText_FR>

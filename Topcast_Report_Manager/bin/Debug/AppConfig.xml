@@ -6,9 +6,9 @@
     <ChildFormWidth>800</ChildFormWidth>
     <ChildFormHeight>600</ChildFormHeight>
     <FullScreen>True</FullScreen>
-    <DefLenguage>FR</DefLenguage>
+    <DefLenguage>EN</DefLenguage>
     <DefReportPath>C:\</DefReportPath>
-    <DefReportFileName>REPORT_@SUB@_.csv</DefReportFileName>
+    <DefReportFileName>REPORT_@SUB@.csv</DefReportFileName>
     <CsvSeparator>;</CsvSeparator>
     <IsAlarmLog>True</IsAlarmLog>
     <IsEventLog>False</IsEventLog>

@@ -9,6 +9,7 @@ namespace Topcast_Report_Manager.Data
         public string DefPlot { get; set; }
         public string DefReport { get; set; }
         public string PlotColor { get; set; }
+        public string UserUnit { get; set; }
         public string SelectedText { get; set; }
         public string VarText_IT { get; set; }
         public string VarText_EN { get; set; }

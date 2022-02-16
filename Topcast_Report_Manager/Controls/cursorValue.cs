@@ -9,12 +9,13 @@ namespace Topcast_Report_Manager.Controls
 
         public Series Series { get; set; }
 
-        public cursorValue(Series series)
+        public cursorValue(Series series, string userUnit)
         {
             InitializeComponent();
             Series = series;
             labelSeriesName.Text = Series.Name;
-            BackColor = series.Color;
+            labelSeriesName.ForeColor = series.Color;
+            labelUnit.Text = userUnit;
             textBoxCursorValue.Text = "0";
         }
 
