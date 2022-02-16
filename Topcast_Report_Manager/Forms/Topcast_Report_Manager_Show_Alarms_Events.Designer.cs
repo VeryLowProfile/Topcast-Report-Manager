@@ -109,7 +109,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonShow.ForeColor = System.Drawing.Color.Gray;
-            this.buttonShow.Image = global::Topcast_Report_Manager.Properties.Resources.alarm;
+            this.buttonShow.Image = global::Topcast_Report_Manager.Properties.Resources._036_notifications_bell_button;
             this.buttonShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonShow.Location = new System.Drawing.Point(3, 73);
             this.buttonShow.Name = "buttonShow";

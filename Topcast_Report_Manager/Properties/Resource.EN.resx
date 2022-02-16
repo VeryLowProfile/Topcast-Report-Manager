@@ -157,7 +157,7 @@
     <value>Show trends</value>
   </data>
   <data name="BTN_TRENDS" xml:space="preserve">
-    <value>Process Trends</value>
+    <value>Trends</value>
   </data>
   <data name="LBL_SEARCH_BY_DATE" xml:space="preserve">
     <value>Search by date</value>

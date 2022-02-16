@@ -43,7 +43,7 @@ namespace Topcast_Report_Manager.Forms
 
 
         private void Topcast_Report_Manager_Show_Trend_Load(object sender, EventArgs e)
-        { 
+        {
             //Fill ID Combobox
             comboBoxIDList.Items.AddRange(Topcast_Report_Manager_Main.SelectedData.SelectedIDs.ToArray());
             comboBoxIDList.Text = comboBoxIDList.Items[0].ToString();
@@ -116,11 +116,8 @@ namespace Topcast_Report_Manager.Forms
             buttonZoomIn.Enabled = false;
             buttonZoomOut.Enabled = false;
             buttonTakePicture.Enabled = false;
-            buttonPlay.BackColor = default;
-            buttonPause.BackColor = default;
-            buttonZoomIn.BackColor = default;
-            buttonZoomOut.BackColor = default;
-            buttonTakePicture.BackColor = default;
+            buttonEnlarge.Enabled = false;
+            buttonShrink.Enabled = false;
 
             //Events Subscription
             MainForm.changeLenguage += buttonChangeLenguage_Click;
@@ -129,7 +126,7 @@ namespace Topcast_Report_Manager.Forms
 
         }
 
-        private void Chart_MouseMove(object sender, MouseEventArgs e)        
+        private void Chart_MouseMove(object sender, MouseEventArgs e)
         {
             tooltip.Hide(chart);
 
@@ -155,21 +152,8 @@ namespace Topcast_Report_Manager.Forms
         {
             foreach (cursorValue cursorValue in panelCursorValue.Controls)
             {
-                cursorValue.updateCursorValue(calculateSeriesIndex(chartArea,cursorValue.Series,e.Location));
+                cursorValue.updateCursorValue(calculateSeriesIndex(chartArea, cursorValue.Series, e.Location));
             }
-        }
-
-        private int calculateSeriesIndex(ChartArea chartArea, Series series, Point point)
-        {
-            double index; 
-
-            var xAxis = chartArea.AxisX;
-            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
-            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
-
-            index = ((series.Points.Count / (xRight - xLeft)) * (point.X - xLeft));
-            
-            return (int)index;
         }
 
         private void buttonShow_Click(object sender, EventArgs e)
@@ -241,11 +225,11 @@ namespace Topcast_Report_Manager.Forms
             livePotTimer.Stop();
             buttonPlay.Enabled = true;
             buttonPause.Enabled = false;
-            buttonPlay.BackColor = Color.ForestGreen;
-            buttonPause.BackColor = default;
             buttonZoomIn.Enabled = true;
             buttonZoomOut.Enabled = true;
             buttonTakePicture.Enabled = true;
+            buttonEnlarge.Enabled = true;
+            buttonShrink.Enabled = false;
         }
 
         public void buttonChangeLenguage_Click(object sender, EventArgs e)
@@ -263,8 +247,6 @@ namespace Topcast_Report_Manager.Forms
                 livePotTimer.Start();
                 buttonPlay.Enabled = false;
                 buttonPause.Enabled = true;
-                buttonPlay.BackColor = default;
-                buttonPause.BackColor = Color.IndianRed;
             }
         }
 
@@ -275,8 +257,6 @@ namespace Topcast_Report_Manager.Forms
                 livePotTimer.Stop();
                 buttonPause.Enabled = false;
                 buttonPlay.Enabled = true;
-                buttonPlay.BackColor = Color.ForestGreen;
-                buttonPause.BackColor = default;
             }
         }
 
@@ -296,6 +276,35 @@ namespace Topcast_Report_Manager.Forms
         {
             chartArea.AxisX.ScaleView.ZoomReset();
             chartArea.AxisY.ScaleView.ZoomReset();
+        }
+
+        private void buttonTakePicture_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.SelectedPath = Topcast_Report_Manager_Main.AppConfig.GenConfig.DefReportPath;
+            DialogResult result = folderBrowserDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                string folderPath = folderBrowserDialog.SelectedPath + @"\" + "TrendImage_" + comboBoxIDList.Text + ".png";
+                chart.SaveImage(folderPath, ChartImageFormat.Png);
+            }
+        }
+
+        private void buttonEnlarge_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel.RowStyles[1].Height = 0;
+            tableLayoutPanel.RowStyles[2].Height = 0;
+            buttonEnlarge.Enabled = false;
+            buttonShrink.Enabled = true;
+        }
+
+        private void buttonShrink_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel.RowStyles[1].Height = 40;
+            tableLayoutPanel.RowStyles[2].Height = 10;
+            buttonEnlarge.Enabled = true;
+            buttonShrink.Enabled = false;
         }
 
         private void Topcast_Report_Manager_Show_Trend_FormClosing(object sender, FormClosingEventArgs e)
@@ -467,11 +476,11 @@ namespace Topcast_Report_Manager.Forms
                 series.ChartType = SeriesChartType.FastLine;
                 series.XValueType = ChartValueType.Time;
 
-                series.BorderWidth = 3;
+                series.BorderWidth = 2;
 
                 foreach (DataRow row in dataTable.Rows)
                 {
-                   series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
+                    series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
                 }
 
                 chart.Series.Add(series);
@@ -497,17 +506,21 @@ namespace Topcast_Report_Manager.Forms
             buttonShowTrends.Text = resourceManager.GetString("BTN_SHOW_TRENDS", ci);
         }
 
-        private void buttonTakePicture_Click(object sender, EventArgs e)
+        private int calculateSeriesIndex(ChartArea chartArea, Series series, Point point)
         {
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            folderBrowserDialog.SelectedPath = Topcast_Report_Manager_Main.AppConfig.GenConfig.DefReportPath;
-            DialogResult result = folderBrowserDialog.ShowDialog();
+            double index = 0;
 
-            if (result == DialogResult.OK)
+            var xAxis = chartArea.AxisX;
+            int xRight = (int)xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            int xLeft = (int)xAxis.ValueToPixelPosition(xAxis.Minimum);
+
+            if (point.X >= xLeft && point.X <= xRight)
             {
-                string folderPath = folderBrowserDialog.SelectedPath + @"\" + "TrendImage_" + comboBoxIDList.Text + ".png";
-                chart.SaveImage(folderPath, ChartImageFormat.Png);
+                index = ((double)(series.Points.Count / (xRight - xLeft)) * (point.X - xLeft));
             }
+
+            return (int)index;
         }
+
     }
 }

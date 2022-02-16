@@ -133,7 +133,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonIDShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonIDShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIDShow.ForeColor = System.Drawing.Color.Gray;
-            this.buttonIDShow.Image = global::Topcast_Report_Manager.Properties.Resources.add;
+            this.buttonIDShow.Image = global::Topcast_Report_Manager.Properties.Resources._004_right_chevron;
             this.buttonIDShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonIDShow.Location = new System.Drawing.Point(3, 3);
             this.buttonIDShow.Name = "buttonIDShow";
@@ -149,7 +149,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonIDHide.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonIDHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIDHide.ForeColor = System.Drawing.Color.Gray;
-            this.buttonIDHide.Image = global::Topcast_Report_Manager.Properties.Resources.minus;
+            this.buttonIDHide.Image = global::Topcast_Report_Manager.Properties.Resources._005_left_chevron;
             this.buttonIDHide.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonIDHide.Location = new System.Drawing.Point(3, 131);
             this.buttonIDHide.Name = "buttonIDHide";
@@ -228,7 +228,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonVarHide.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonVarHide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVarHide.ForeColor = System.Drawing.Color.Gray;
-            this.buttonVarHide.Image = global::Topcast_Report_Manager.Properties.Resources.minus;
+            this.buttonVarHide.Image = global::Topcast_Report_Manager.Properties.Resources._005_left_chevron;
             this.buttonVarHide.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonVarHide.Location = new System.Drawing.Point(3, 195);
             this.buttonVarHide.Name = "buttonVarHide";
@@ -244,7 +244,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonVarHideAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonVarHideAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVarHideAll.ForeColor = System.Drawing.Color.Gray;
-            this.buttonVarHideAll.Image = global::Topcast_Report_Manager.Properties.Resources.minus;
+            this.buttonVarHideAll.Image = global::Topcast_Report_Manager.Properties.Resources._005_left_chevron;
             this.buttonVarHideAll.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonVarHideAll.Location = new System.Drawing.Point(3, 131);
             this.buttonVarHideAll.Name = "buttonVarHideAll";
@@ -260,7 +260,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonVarShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonVarShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVarShow.ForeColor = System.Drawing.Color.Gray;
-            this.buttonVarShow.Image = global::Topcast_Report_Manager.Properties.Resources.add;
+            this.buttonVarShow.Image = global::Topcast_Report_Manager.Properties.Resources._004_right_chevron;
             this.buttonVarShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVarShow.Location = new System.Drawing.Point(3, 3);
             this.buttonVarShow.Name = "buttonVarShow";
@@ -276,7 +276,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonVarShowAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonVarShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVarShowAll.ForeColor = System.Drawing.Color.Gray;
-            this.buttonVarShowAll.Image = global::Topcast_Report_Manager.Properties.Resources.add;
+            this.buttonVarShowAll.Image = global::Topcast_Report_Manager.Properties.Resources._004_right_chevron;
             this.buttonVarShowAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVarShowAll.Location = new System.Drawing.Point(3, 67);
             this.buttonVarShowAll.Name = "buttonVarShowAll";
@@ -292,7 +292,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonPrint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrint.ForeColor = System.Drawing.Color.Gray;
-            this.buttonPrint.Image = global::Topcast_Report_Manager.Properties.Resources.notepad;
+            this.buttonPrint.Image = global::Topcast_Report_Manager.Properties.Resources._031_printer;
             this.buttonPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPrint.Location = new System.Drawing.Point(3, 539);
             this.buttonPrint.Name = "buttonPrint";

@@ -122,7 +122,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenSearch.FlatAppearance.BorderSize = 0;
             this.buttonOpenSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenSearch.ForeColor = System.Drawing.Color.Gray;
-            this.buttonOpenSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenSearch.Image")));
+            this.buttonOpenSearch.Image = global::Topcast_Report_Manager.Properties.Resources._001_search;
             this.buttonOpenSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenSearch.Location = new System.Drawing.Point(3, 182);
             this.buttonOpenSearch.Name = "buttonOpenSearch";
@@ -152,7 +152,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenShowData.FlatAppearance.BorderSize = 0;
             this.buttonOpenShowData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenShowData.ForeColor = System.Drawing.Color.Gray;
-            this.buttonOpenShowData.Image = global::Topcast_Report_Manager.Properties.Resources.notepad;
+            this.buttonOpenShowData.Image = global::Topcast_Report_Manager.Properties.Resources._024_analytics;
             this.buttonOpenShowData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenShowData.Location = new System.Drawing.Point(3, 282);
             this.buttonOpenShowData.Name = "buttonOpenShowData";
@@ -169,7 +169,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenShowTrend.FlatAppearance.BorderSize = 0;
             this.buttonOpenShowTrend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenShowTrend.ForeColor = System.Drawing.Color.Gray;
-            this.buttonOpenShowTrend.Image = global::Topcast_Report_Manager.Properties.Resources.shuffle;
+            this.buttonOpenShowTrend.Image = global::Topcast_Report_Manager.Properties.Resources._022_timeline;
             this.buttonOpenShowTrend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenShowTrend.Location = new System.Drawing.Point(3, 382);
             this.buttonOpenShowTrend.Name = "buttonOpenShowTrend";
@@ -186,7 +186,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenShowAlarmsEvents.FlatAppearance.BorderSize = 0;
             this.buttonOpenShowAlarmsEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenShowAlarmsEvents.ForeColor = System.Drawing.Color.Gray;
-            this.buttonOpenShowAlarmsEvents.Image = global::Topcast_Report_Manager.Properties.Resources.alarm;
+            this.buttonOpenShowAlarmsEvents.Image = global::Topcast_Report_Manager.Properties.Resources._036_notifications_bell_button;
             this.buttonOpenShowAlarmsEvents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenShowAlarmsEvents.Location = new System.Drawing.Point(3, 482);
             this.buttonOpenShowAlarmsEvents.Name = "buttonOpenShowAlarmsEvents";
@@ -203,7 +203,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenReport.FlatAppearance.BorderSize = 0;
             this.buttonOpenReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenReport.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonOpenReport.Image = global::Topcast_Report_Manager.Properties.Resources.notepad;
+            this.buttonOpenReport.Image = global::Topcast_Report_Manager.Properties.Resources._031_printer;
             this.buttonOpenReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOpenReport.Location = new System.Drawing.Point(3, 582);
             this.buttonOpenReport.Name = "buttonOpenReport";

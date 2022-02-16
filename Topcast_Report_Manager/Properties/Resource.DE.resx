@@ -154,7 +154,7 @@
     <value>Daten anzeigen</value>
   </data>
   <data name="BTN_SHOW_TRENDS" xml:space="preserve">
-    <value>Trends anzeigen</value>
+    <value>Trends</value>
   </data>
   <data name="BTN_TRENDS" xml:space="preserve">
     <value>Prozesstrends</value>

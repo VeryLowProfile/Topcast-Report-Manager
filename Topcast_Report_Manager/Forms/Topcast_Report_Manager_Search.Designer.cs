@@ -29,7 +29,6 @@ namespace Topcast_Report_Manager.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topcast_Report_Manager_Search));
             this.buttonSearch = new System.Windows.Forms.Button();
             this.dataGridViewSearchResult = new System.Windows.Forms.DataGridView();
             this.dataGridViewSelected = new System.Windows.Forms.DataGridView();
@@ -57,7 +56,7 @@ namespace Topcast_Report_Manager.Forms
             this.buttonSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.Color.Gray;
-            this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
+            this.buttonSearch.Image = global::Topcast_Report_Manager.Properties.Resources._001_search;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.Location = new System.Drawing.Point(3, 153);
             this.buttonSearch.Name = "buttonSearch";
