@@ -290,6 +290,7 @@ namespace Topcast_Report_Manager.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 596);
             this.Controls.Add(this.tableLayoutPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Topcast_Report_Manager_Search";
             this.Text = "Search";
             this.Load += new System.EventHandler(this.Topcast_Report_Manager_Search_Load);

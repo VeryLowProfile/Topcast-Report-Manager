@@ -4,6 +4,7 @@ using System.Data;
 using System.Drawing;
 using System.Resources;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Reflection;
 using System.Globalization;
 using System.Collections.Generic;
@@ -169,46 +170,63 @@ namespace Topcast_Report_Manager.Forms
             SetButtonsVisibility();
         }
 
-        private void buttonPrint_Click(object sender, EventArgs e)
+        public void buttonChangeLenguage_Click(object sender, EventArgs e)
         {
+            ChangeLenguage();
+            Fillpivot();
+            FillList();
+            FillIdList();
+
+            SetButtonsVisibility();
+            SetIdButtonVisibility();
+        }
+
+        private async void buttonPrint_Click(object sender, EventArgs e)
+        {
+
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
             folderBrowserDialog.SelectedPath = Topcast_Report_Manager_Main.AppConfig.GenConfig.DefReportPath;
             DialogResult result = folderBrowserDialog.ShowDialog();
 
             if (result == DialogResult.OK)
             {
+
+                //Get Main Folder path
                 folderPath = folderBrowserDialog.SelectedPath;
 
+                //Create handle to print status Form
                 PrintStatusForm = new Topcast_Report_Manager_Report_Print_Status();
-                PrintStatusForm.Show();
-
                 richTextBox = (RichTextBox)PrintStatusForm.Controls[0].Controls[0];
                 progressBar = (ProgressBar)PrintStatusForm.Controls[0].Controls[1];
+                PrintStatusForm.StartPosition = FormStartPosition.CenterScreen;
+                PrintStatusForm.FormBorderStyle = FormBorderStyle.None;
+                PrintStatusForm.Show(this);
 
+                //Calculate progress bar
                 calculateProgressBar();
 
-                //Create directories
-                createReportFolders();
+                //Print Main Folder Path
+                richTextBox.Invoke((Action)(() => updateRichTextBox($"Report folder path is {folderPath}", Color.Black)));
 
-                //Create Thread
-                Thread logVarThread = new Thread(logVarReport);
-                Thread alarmThread = new Thread(alarmReport);
-                Thread eventThread = new Thread(eventReport);
-
-                //LogVar Report start
-                logVarThread.Start();
-
-                //AlarmReport start
+                //Create task list 
+                List<Task> printTaskList = new List<Task>();
+                printTaskList.Add(Task.Run(() => createReportFolders()));
+                printTaskList.Add(Task.Run(() => logVarReport()));
                 if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsAlarmLog == "True")
                 {
-                    alarmThread.Start();
+                    printTaskList.Add(Task.Run(() => alarmReport()));
+                }
+                if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsAlarmLog == "True")
+                {
+                    printTaskList.Add(Task.Run(() => eventReport()));
                 }
 
-                //Event Report start
-                if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsEventLog == "True")
-                {
-                    eventThread.Start();
-                }
+                //Wait all task to complete
+                await Task.WhenAll(printTaskList);
+
+                //Close Print Status window
+                richTextBox.Invoke((Action)(() => updateRichTextBox($"ALL DONE!", Color.Black)));
+                PrintStatusForm.FormBorderStyle = FormBorderStyle.Sizable;
             }
         }
 
@@ -221,41 +239,21 @@ namespace Topcast_Report_Manager.Forms
                 {
                     Directory.CreateDirectory(folderPath + @"\" + id);
 
-                    richTextBox.Invoke(new Action(() => {
+                    //update progress bar
+                    progressBar.Invoke((Action)(() => incrementProgressBar()));
 
-                        richTextBox.SelectionColor = Color.Green;
-                        richTextBox.AppendText($"{id} folder created \n");
-                        richTextBox.ScrollToCaret();
-
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Folder created", Color.Black)));
 
                 } else {
 
-                    richTextBox.Invoke(new Action(() => {
-
-                        richTextBox.SelectionColor = Color.Green;
-                        richTextBox.AppendText($"{id} folder already exist\n");
-                        richTextBox.ScrollToCaret();
-
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
-
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Folder already exist", Color.Black)));
                 }
             }
         }
 
-        public async void logVarReport()
+        public void logVarReport()
         {
             foreach (string id in ShowID)
             {
@@ -265,44 +263,27 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    logVarTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, logVarQry);
+                    logVarTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, logVarQry);
                     ExportManagement.ExportDataTableToCSV(logVarTable, logVarfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
-                    richTextBox.Invoke(new Action(() => {
+                    //update progress bar
+                    progressBar.Invoke((Action)(() => incrementProgressBar()));
 
-                        richTextBox.SelectionColor = Color.Coral;
-                        richTextBox.AppendText($"{id} LogVar report created \n");
-                        richTextBox.ScrollToCaret();
-
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} LogVar report created", Color.Black)));
 
                 }
                 catch (Exception ex)
                 {
-                    richTextBox.Invoke(new Action(() => {
 
-                        richTextBox.SelectionColor = Color.Coral;
-                        richTextBox.AppendText($"{id} {ex.Message} \n");
-                        richTextBox.ScrollToCaret();
-
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} LogVar report exception {ex.Message}", Color.Black)));
+                
                 }
             }
         }
 
-        public async void alarmReport()
+        public void alarmReport()
         {
             foreach (string id in ShowID)
             {
@@ -312,44 +293,26 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    alarmTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, alarmQry);
+                    alarmTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, alarmQry);
                     ExportManagement.ExportDataTableToCSV(DataTableManagement.GetDataTableAlarmsXref(Topcast_Report_Manager_Main.AppConfig, alarmTable), alarmsfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
-                    richTextBox.Invoke(new Action(() => {
+                    //update progress bar
+                    progressBar.Invoke((Action)(() => incrementProgressBar()));
 
-                        richTextBox.SelectionColor = Color.Teal;
-                        richTextBox.AppendText($"{id} Alarm report created \n");
-                        richTextBox.ScrollToCaret();
-
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
-
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Alarm report created", Color.Black)));
                 }
                 catch (Exception ex)
                 {
-                    richTextBox.Invoke(new Action(() => {
 
-                        richTextBox.SelectionColor = Color.Teal;
-                        richTextBox.AppendText($"{id} {ex.Message} \n");
-                        richTextBox.ScrollToCaret();
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Alarm report exception {ex.Message}", Color.Black)));
 
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
                 }
             }
         }
 
-        public async void eventReport()
+        public void eventReport()
         {
             foreach (string id in ShowID)
             {
@@ -359,76 +322,59 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    eventTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, eventQry);
+                    eventTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, eventQry);
                     ExportManagement.ExportDataTableToCSV(DataTableManagement.GetDataTableEventsXref(Topcast_Report_Manager_Main.AppConfig, eventTable), eventsfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
-                    richTextBox.Invoke(new Action(() => {
+                    //update progress bar
+                    progressBar.Invoke((Action)(() => incrementProgressBar()));
 
-                        richTextBox.SelectionColor = Color.CadetBlue;
-                        richTextBox.AppendText($"{id} Event report created \n");
-                        richTextBox.ScrollToCaret();
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Event report created", Color.Black)));
 
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
                 }
                 catch (Exception ex)
                 {
-                    richTextBox.Invoke(new Action(() => {
 
-                        richTextBox.SelectionColor = Color.CadetBlue;
-                        richTextBox.AppendText($"{id} {ex.Message} \n");
-                        richTextBox.ScrollToCaret();
+                    //update status form rich text box
+                    richTextBox.Invoke((Action)(() => updateRichTextBox($"{id} Event report exception {ex.Message}", Color.Black)));
 
-                    }));
-
-                    progressBar.Invoke(new Action(() => {
-
-                        progressBar.Increment(1);
-
-                    }));
                 }
             }
         }
 
         public void calculateProgressBar()
         {
-            //init
             progressBar.Minimum = 0;
             progressBar.Maximum = 0;
 
             //Add number of folder to be created
             progressBar.Maximum += ShowID.Count;
 
-            //Add number of log var report to be created
+            //Add number of var log to be printed
             progressBar.Maximum += ShowID.Count;
 
-            //Add number of alarm report to be created
+            //Add number of alarm log to print
             if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsAlarmLog == "True")
             {
                 progressBar.Maximum += ShowID.Count;
             }
 
-            //Add number of event report to be created
-            if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsEventLog == "True")
+            //Add number of event log to print
+            if (Topcast_Report_Manager_Main.AppConfig.GenConfig.IsAlarmLog == "True")
             {
                 progressBar.Maximum += ShowID.Count;
             }
         }
 
-        public void buttonChangeLenguage_Click(object sender, EventArgs e)
+        private void incrementProgressBar()
         {
-            ChangeLenguage();
-            Fillpivot();
-            FillList();
-            FillIdList();
+            progressBar.Increment(1);
+        }
 
-            SetButtonsVisibility();
-            SetIdButtonVisibility();
+        private async void updateRichTextBox(string text, Color color)
+        {
+            richTextBox.AppendText(text + "\n");
+            richTextBox.ScrollToCaret();
         }
 
         private void Fillpivot()

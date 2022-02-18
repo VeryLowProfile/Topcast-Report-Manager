@@ -47,7 +47,8 @@
             this.tableLayoutPanelPrintStatus.RowCount = 2;
             this.tableLayoutPanelPrintStatus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelPrintStatus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanelPrintStatus.Size = new System.Drawing.Size(464, 201);
+            this.tableLayoutPanelPrintStatus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelPrintStatus.Size = new System.Drawing.Size(464, 216);
             this.tableLayoutPanelPrintStatus.TabIndex = 0;
             // 
             // richTextBox
@@ -56,14 +57,14 @@
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox.Location = new System.Drawing.Point(3, 3);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(458, 165);
+            this.richTextBox.Size = new System.Drawing.Size(458, 180);
             this.richTextBox.TabIndex = 0;
             this.richTextBox.Text = "";
             // 
             // progressBar
             // 
             this.progressBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar.Location = new System.Drawing.Point(3, 174);
+            this.progressBar.Location = new System.Drawing.Point(3, 189);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(458, 24);
             this.progressBar.TabIndex = 1;
@@ -72,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 201);
+            this.ClientSize = new System.Drawing.Size(464, 216);
             this.Controls.Add(this.tableLayoutPanelPrintStatus);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Topcast_Report_Manager_Report_Print_Status";

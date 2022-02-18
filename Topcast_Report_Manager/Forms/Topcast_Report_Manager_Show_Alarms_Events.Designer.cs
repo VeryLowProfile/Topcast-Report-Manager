@@ -138,6 +138,7 @@ namespace Topcast_Report_Manager.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 596);
             this.Controls.Add(this.tableLayoutPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Topcast_Report_Manager_Show_Alarms_Events";
             this.Text = "Topcast_Report_Manager_Show_Alarms_Events";
             this.Load += new System.EventHandler(this.Topcast_Report_Manager_Show_Alarms_Events_Load);

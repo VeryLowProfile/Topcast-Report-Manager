@@ -399,6 +399,7 @@ namespace Topcast_Report_Manager.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 842);
             this.Controls.Add(this.tableLayoutPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Topcast_Report_Manager_Show_Trend";
             this.Text = "Topcast_Report_Manager_Show_Trend";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Topcast_Report_Manager_Show_Trend_FormClosing);
