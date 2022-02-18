@@ -67,3 +67,5 @@ C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topc
 C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Release\Topcast_Report_Manager.exe
 C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topcast_Report_Manager\obj\Release\Topcast_Report_Manager.pdb
 C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Release\Topcast_Report_Manager.csproj.SuggestedBindingRedirects.cache
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Release\Topcast_Report_Manager.Controls.cursorValue.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Release\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Report_Print_Status.resources
