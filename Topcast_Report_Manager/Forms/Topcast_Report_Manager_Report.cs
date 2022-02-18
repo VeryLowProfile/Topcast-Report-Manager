@@ -3,7 +3,6 @@ using System.IO;
 using System.Data;
 using System.Drawing;
 using System.Resources;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Reflection;
 using System.Globalization;
@@ -371,7 +370,7 @@ namespace Topcast_Report_Manager.Forms
             progressBar.Increment(1);
         }
 
-        private async void updateRichTextBox(string text, Color color)
+        private void updateRichTextBox(string text, Color color)
         {
             richTextBox.AppendText(text + "\n");
             richTextBox.ScrollToCaret();

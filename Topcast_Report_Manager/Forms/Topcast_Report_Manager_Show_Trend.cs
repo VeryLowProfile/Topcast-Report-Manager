@@ -3,6 +3,7 @@ using System.Data;
 using System.Resources;
 using System.Reflection;
 using System.Globalization;
+using System.Threading.Tasks;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -39,7 +40,6 @@ namespace Topcast_Report_Manager.Forms
 
             livePotTimer = new Timer();
         }
-
 
 
         private void Topcast_Report_Manager_Show_Trend_Load(object sender, EventArgs e)
@@ -455,11 +455,56 @@ namespace Topcast_Report_Manager.Forms
             }
         }
 
+        //public async void plotChart()
+        //{
+        //    string qry = SqlQryBuilder.BuildPlotQry(ShowPivot, Topcast_Report_Manager_Main.AppConfig, comboBoxIDList.Text);
+        //    DataTable dataTable = new DataTable();
+
+        //    try
+        //    {
+        //        dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        //    }
+
+        //    chart.Series.Clear();
+        //    panelCursorValue.Controls.Clear();
+
+        //    foreach (var pivot in ShowPivot)
+        //    {
+        //        Series series = new Series();
+        //        series.Name = pivot.selectedText;
+        //        series.Color = Color.FromName(pivot.plotColor);
+        //        series.ChartType = SeriesChartType.FastLine;
+        //        series.XValueType = ChartValueType.Time;
+
+        //        series.BorderWidth = 2;
+
+        //        foreach (DataRow row in dataTable.Rows)
+        //        {
+        //            series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
+        //        }
+
+        //        chart.Series.Add(series);
+
+        //        //Add cursor value control with injected series as parameter
+        //        cursorValue cursorValue = new cursorValue(series, pivot.userUnit);
+        //        cursorValue.Dock = DockStyle.Top;
+        //        panelCursorValue.Controls.Add(cursorValue);
+
+        //    }
+        //}
+
         public async void plotChart()
         {
+
+            //Create string and datatable
             string qry = SqlQryBuilder.BuildPlotQry(ShowPivot, Topcast_Report_Manager_Main.AppConfig, comboBoxIDList.Text);
             DataTable dataTable = new DataTable();
 
+            //Get Chart data To DataTable
             try
             {
                 dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
@@ -469,9 +514,23 @@ namespace Topcast_Report_Manager.Forms
                 MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
+            //Clean old Chart
             chart.Series.Clear();
             panelCursorValue.Controls.Clear();
 
+            //Create and start Task to add series to the Chart Data
+            Task addSeries = new Task(() => addNewSeriesToChart(dataTable));
+            addSeries.Start();
+
+            //wait data task end
+            await Task.WhenAll(addSeries);
+
+            chart.Show();
+
+        }
+
+        public void addNewSeriesToChart(DataTable dataTable)
+        {
             foreach (var pivot in ShowPivot)
             {
                 Series series = new Series();
@@ -487,14 +546,24 @@ namespace Topcast_Report_Manager.Forms
                     series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
                 }
 
-                chart.Series.Add(series);
+                //Add Series To Chart
+                chart.Invoke((Action)(() => addSeriesToChart(series)));
 
                 //Add cursor value control with injected series as parameter
-                cursorValue cursorValue = new cursorValue(series, pivot.userUnit);
-                cursorValue.Dock = DockStyle.Top;
-                panelCursorValue.Controls.Add(cursorValue);
-
+                panelCursorValue.Invoke((Action)(() => addCursorValueToPanel(series, pivot.userUnit)));
             }
+        }
+
+        private void addSeriesToChart(Series series)
+        {
+            chart.Series.Add(series);
+        }
+
+        private void addCursorValueToPanel(Series series, string userUnit)
+        {
+            cursorValue cursorValue = new cursorValue(series, userUnit);
+            cursorValue.Dock = DockStyle.Top;
+            panelCursorValue.Controls.Add(cursorValue);
         }
 
         public void ChangeLenguage()
