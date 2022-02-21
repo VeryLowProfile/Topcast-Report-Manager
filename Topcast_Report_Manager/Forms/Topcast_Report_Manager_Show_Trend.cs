@@ -19,11 +19,11 @@ namespace Topcast_Report_Manager.Forms
         public List<(string colName, string selectedText, string plotColor, string userUnit)> ShowPivot { get; set; }
         public List<(string colName, string selectedText, string plotColor, string userUnit)> HidePivot { get; set; }
 
-        ChartArea chartArea;
-        Chart chart;
-        ToolTip tooltip;
+        private ChartArea chartArea;
+        private Chart chart;
+        private ToolTip tooltip;
 
-        Timer livePotTimer;
+        private Timer livePotTimer;
 
         public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
         {
@@ -40,7 +40,6 @@ namespace Topcast_Report_Manager.Forms
 
             livePotTimer = new Timer();
         }
-
 
         private void Topcast_Report_Manager_Show_Trend_Load(object sender, EventArgs e)
         {
@@ -222,6 +221,7 @@ namespace Topcast_Report_Manager.Forms
         private void buttonShowTrends_Click(object sender, EventArgs e)
         {
             plotChart();
+
             livePotTimer.Stop();
             buttonPlay.Enabled = true;
             buttonPause.Enabled = false;
@@ -454,48 +454,6 @@ namespace Topcast_Report_Manager.Forms
                 buttonShowAll.Visible = true;
             }
         }
-
-        //public async void plotChart()
-        //{
-        //    string qry = SqlQryBuilder.BuildPlotQry(ShowPivot, Topcast_Report_Manager_Main.AppConfig, comboBoxIDList.Text);
-        //    DataTable dataTable = new DataTable();
-
-        //    try
-        //    {
-        //        dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //    }
-
-        //    chart.Series.Clear();
-        //    panelCursorValue.Controls.Clear();
-
-        //    foreach (var pivot in ShowPivot)
-        //    {
-        //        Series series = new Series();
-        //        series.Name = pivot.selectedText;
-        //        series.Color = Color.FromName(pivot.plotColor);
-        //        series.ChartType = SeriesChartType.FastLine;
-        //        series.XValueType = ChartValueType.Time;
-
-        //        series.BorderWidth = 2;
-
-        //        foreach (DataRow row in dataTable.Rows)
-        //        {
-        //            series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
-        //        }
-
-        //        chart.Series.Add(series);
-
-        //        //Add cursor value control with injected series as parameter
-        //        cursorValue cursorValue = new cursorValue(series, pivot.userUnit);
-        //        cursorValue.Dock = DockStyle.Top;
-        //        panelCursorValue.Controls.Add(cursorValue);
-
-        //    }
-        //}
 
         public async void plotChart()
         {

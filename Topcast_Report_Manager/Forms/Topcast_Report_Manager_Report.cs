@@ -22,7 +22,6 @@ namespace Topcast_Report_Manager.Forms
         public List<(string colName, string selectedText)> ShowPivot { get; set; }
         public List<(string colName, string selectedText)> HidePivot { get; set; }
         
-        //Da Eliminare se la soluzione m,ultithread non dovesse funzionare
         private string folderPath = "";
         private RichTextBox richTextBox;
         private ProgressBar progressBar;
