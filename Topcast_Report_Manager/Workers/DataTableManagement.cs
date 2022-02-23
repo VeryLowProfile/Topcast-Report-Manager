@@ -74,5 +74,25 @@ namespace Topcast_Report_Manager.Workers
             }
             return alarmTable;
         }
+
+        public static DataTable TrimTable(DataTable dataTable, int startRow, int endRow)
+        {
+            DataTable resultTable = new DataTable();
+
+            //Create columns into the new table
+            foreach (DataColumn col in dataTable.Columns)
+            {
+                dataTable.Columns.Add(col);
+            }
+
+            //Copy Rows into new table
+            for (int i = startRow; i < endRow; i++)
+            {
+                dataTable.Rows.Add(dataTable.Rows[i]);
+            }
+
+            return resultTable;
+
+        }
     }
 }

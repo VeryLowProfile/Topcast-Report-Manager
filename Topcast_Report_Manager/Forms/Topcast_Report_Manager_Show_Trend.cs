@@ -22,6 +22,7 @@ namespace Topcast_Report_Manager.Forms
         private ChartArea chartArea;
         private Chart chart;
         private ToolTip tooltip;
+        private DataTable chartData;
 
         private Timer livePotTimer;
 
@@ -37,6 +38,7 @@ namespace Topcast_Report_Manager.Forms
             chartArea = new ChartArea();
             chart = new Chart();
             tooltip = new ToolTip();
+            chartData = new DataTable();
 
             livePotTimer = new Timer();
         }
@@ -309,6 +311,11 @@ namespace Topcast_Report_Manager.Forms
             buttonShrink.Enabled = false;
         }
 
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Topcast_Report_Manager_Show_Trend_FormClosing(object sender, FormClosingEventArgs e)
         {
             livePotTimer.Stop();
@@ -460,12 +467,11 @@ namespace Topcast_Report_Manager.Forms
 
             //Create string and datatable
             string qry = SqlQryBuilder.BuildPlotQry(ShowPivot, Topcast_Report_Manager_Main.AppConfig, comboBoxIDList.Text);
-            DataTable dataTable = new DataTable();
 
             //Get Chart data To DataTable
             try
             {
-                dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+                chartData = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
             }
             catch (Exception ex)
             {
@@ -476,40 +482,41 @@ namespace Topcast_Report_Manager.Forms
             chart.Series.Clear();
             panelCursorValue.Controls.Clear();
 
-            //Create and start Task to add series to the Chart Data
-            Task addSeries = new Task(() => addNewSeriesToChart(dataTable));
-            addSeries.Start();
+            //Create a new task list to add series to chart
+            List<Task> tasks = new List<Task>();
+
+            foreach (var pivot in ShowPivot)
+            {
+                tasks.Add(Task.Run(() => addNewSeriesToChart(chartData, pivot.selectedText, pivot.plotColor, pivot.userUnit)));
+            }
 
             //wait data task end
-            await Task.WhenAll(addSeries);
-
-            chart.Show();
+            await Task.WhenAll(tasks);
 
         }
 
-        public void addNewSeriesToChart(DataTable dataTable)
+        public void addNewSeriesToChart(DataTable dataTable, string varName, string plotColor, string userUnit)
         {
-            foreach (var pivot in ShowPivot)
+
+            Series series = new Series();
+            series.Name = varName;
+            series.Color = Color.FromName(plotColor);
+            series.ChartType = SeriesChartType.FastLine;
+            series.XValueType = ChartValueType.Time;
+
+            series.BorderWidth = 2;
+
+            foreach (DataRow row in dataTable.Rows)
             {
-                Series series = new Series();
-                series.Name = pivot.selectedText;
-                series.Color = Color.FromName(pivot.plotColor);
-                series.ChartType = SeriesChartType.FastLine;
-                series.XValueType = ChartValueType.Time;
-
-                series.BorderWidth = 2;
-
-                foreach (DataRow row in dataTable.Rows)
-                {
-                    series.Points.AddXY(row["DateTime"], row[pivot.selectedText]);
-                }
-
-                //Add Series To Chart
-                chart.Invoke((Action)(() => addSeriesToChart(series)));
-
-                //Add cursor value control with injected series as parameter
-                panelCursorValue.Invoke((Action)(() => addCursorValueToPanel(series, pivot.userUnit)));
+                series.Points.AddXY(row["DateTime"], row[varName]);
             }
+
+            //Add Series To Chart
+            chart.Invoke((Action)(() => addSeriesToChart(series)));
+
+            //Add cursor value control with injected series as parameter
+            panelCursorValue.Invoke((Action)(() => addCursorValueToPanel(series, userUnit)));
+
         }
 
         private void addSeriesToChart(Series series)
@@ -552,6 +559,5 @@ namespace Topcast_Report_Manager.Forms
 
             return (int)index;
         }
-
     }
 }
