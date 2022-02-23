@@ -119,6 +119,7 @@ namespace Topcast_Report_Manager.Forms
             buttonTakePicture.Enabled = false;
             buttonEnlarge.Enabled = false;
             buttonShrink.Enabled = false;
+            buttonPrint.Enabled = false;
 
             //Events Subscription
             MainForm.changeLenguage += buttonChangeLenguage_Click;
@@ -232,6 +233,7 @@ namespace Topcast_Report_Manager.Forms
             buttonTakePicture.Enabled = true;
             buttonEnlarge.Enabled = true;
             buttonShrink.Enabled = false;
+            buttonPrint.Enabled = true;
         }
 
         public void buttonChangeLenguage_Click(object sender, EventArgs e)
@@ -313,6 +315,14 @@ namespace Topcast_Report_Manager.Forms
 
         private void buttonPrint_Click(object sender, EventArgs e)
         {
+            DataTable dataTable = new DataTable();
+
+            int beginIndex = calculateInitIndex(chartArea, chart.Series[0]);
+            int endIndex = calculateendIndex(chartArea, chart.Series[0]);
+
+            dataTable = DataTableManagement.TrimTable(chartData, beginIndex, endIndex);
+
+
 
         }
 
@@ -556,6 +566,32 @@ namespace Topcast_Report_Manager.Forms
             {
                 index = ((double)(series.Points.Count / (xRight - xLeft)) * (point.X - xLeft));
             }
+
+            return (int)index;
+        }
+
+        private int calculateInitIndex(ChartArea chartArea, Series series)
+        {
+            double index = 0;
+
+            var xAxis = chartArea.AxisX;
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
+
+            index = (double)series.Points.Count / (xRight - xLeft);
+
+            return (int)index;
+        }
+
+        private int calculateendIndex(ChartArea chartArea, Series series)
+        {
+            double index = 0;
+
+            var xAxis = chartArea.AxisX;
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
+
+            index = ((double)series.Points.Count) / (xRight - xLeft) * xLeft;
 
             return (int)index;
         }
