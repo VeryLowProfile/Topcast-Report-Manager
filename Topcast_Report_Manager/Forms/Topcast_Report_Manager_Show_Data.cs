@@ -112,7 +112,7 @@ namespace Topcast_Report_Manager.Forms
 
             try
             {
-                dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+                dataTable = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(qry);
             }
             catch (Exception ex)
             {

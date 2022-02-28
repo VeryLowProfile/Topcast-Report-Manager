@@ -1,5 +1,4 @@
 ﻿using System.Data;
-using System.Collections.Generic;
 using Topcast_Report_Manager.Data;
 
 namespace Topcast_Report_Manager.Workers

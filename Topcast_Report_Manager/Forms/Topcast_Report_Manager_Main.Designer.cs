@@ -35,7 +35,6 @@ namespace Topcast_Report_Manager.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelConnectionString = new System.Windows.Forms.Label();
             this.buttonOpenSearch = new System.Windows.Forms.Button();
-            this.labelConnectionCheck = new System.Windows.Forms.Label();
             this.buttonOpenShowData = new System.Windows.Forms.Button();
             this.buttonOpenShowTrend = new System.Windows.Forms.Button();
             this.buttonOpenShowAlarmsEvents = new System.Windows.Forms.Button();
@@ -48,11 +47,15 @@ namespace Topcast_Report_Manager.Forms
             this.button_IT = new System.Windows.Forms.Button();
             this.button_FR = new System.Windows.Forms.Button();
             this.panelChildform = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelDbUsage = new System.Windows.Forms.TableLayoutPanel();
+            this.labelConnectionCheck = new System.Windows.Forms.Label();
+            this.labelDbUsage = new System.Windows.Forms.Label();
             this.panelNavigation.SuspendLayout();
             this.panelButtonNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_Flags.SuspendLayout();
             this.tableLayoutPanelFlags.SuspendLayout();
+            this.tableLayoutPanelDbUsage.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelNavigation
@@ -71,12 +74,12 @@ namespace Topcast_Report_Manager.Forms
             this.panelButtonNavigation.Controls.Add(this.pictureBox1, 0, 0);
             this.panelButtonNavigation.Controls.Add(this.labelConnectionString, 0, 1);
             this.panelButtonNavigation.Controls.Add(this.buttonOpenSearch, 0, 3);
-            this.panelButtonNavigation.Controls.Add(this.labelConnectionCheck, 0, 2);
             this.panelButtonNavigation.Controls.Add(this.buttonOpenShowData, 0, 4);
             this.panelButtonNavigation.Controls.Add(this.buttonOpenShowTrend, 0, 5);
             this.panelButtonNavigation.Controls.Add(this.buttonOpenShowAlarmsEvents, 0, 6);
             this.panelButtonNavigation.Controls.Add(this.buttonOpenReport, 0, 7);
             this.panelButtonNavigation.Controls.Add(this.panel_Flags, 0, 8);
+            this.panelButtonNavigation.Controls.Add(this.tableLayoutPanelDbUsage, 0, 2);
             this.panelButtonNavigation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelButtonNavigation.Location = new System.Drawing.Point(0, 0);
             this.panelButtonNavigation.Name = "panelButtonNavigation";
@@ -132,19 +135,6 @@ namespace Topcast_Report_Manager.Forms
             this.buttonOpenSearch.Text = "BTN_SEARCH";
             this.buttonOpenSearch.UseVisualStyleBackColor = true;
             this.buttonOpenSearch.Click += new System.EventHandler(this.buttonOpenSearch_Click);
-            // 
-            // labelConnectionCheck
-            // 
-            this.labelConnectionCheck.AutoSize = true;
-            this.labelConnectionCheck.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelConnectionCheck.ForeColor = System.Drawing.Color.Gray;
-            this.labelConnectionCheck.Location = new System.Drawing.Point(3, 109);
-            this.labelConnectionCheck.Name = "labelConnectionCheck";
-            this.labelConnectionCheck.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.labelConnectionCheck.Size = new System.Drawing.Size(267, 70);
-            this.labelConnectionCheck.TabIndex = 3;
-            this.labelConnectionCheck.Text = "Connection Check";
-            this.labelConnectionCheck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonOpenShowData
             // 
@@ -311,6 +301,44 @@ namespace Topcast_Report_Manager.Forms
             this.panelChildform.Size = new System.Drawing.Size(735, 729);
             this.panelChildform.TabIndex = 1;
             // 
+            // tableLayoutPanelDbUsage
+            // 
+            this.tableLayoutPanelDbUsage.ColumnCount = 1;
+            this.tableLayoutPanelDbUsage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelDbUsage.Controls.Add(this.labelConnectionCheck, 0, 0);
+            this.tableLayoutPanelDbUsage.Controls.Add(this.labelDbUsage, 0, 1);
+            this.tableLayoutPanelDbUsage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelDbUsage.Location = new System.Drawing.Point(3, 112);
+            this.tableLayoutPanelDbUsage.Name = "tableLayoutPanelDbUsage";
+            this.tableLayoutPanelDbUsage.RowCount = 2;
+            this.tableLayoutPanelDbUsage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelDbUsage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelDbUsage.Size = new System.Drawing.Size(267, 64);
+            this.tableLayoutPanelDbUsage.TabIndex = 9;
+            // 
+            // labelConnectionCheck
+            // 
+            this.labelConnectionCheck.AutoSize = true;
+            this.labelConnectionCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelConnectionCheck.ForeColor = System.Drawing.Color.Gray;
+            this.labelConnectionCheck.Location = new System.Drawing.Point(3, 0);
+            this.labelConnectionCheck.Name = "labelConnectionCheck";
+            this.labelConnectionCheck.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.labelConnectionCheck.Size = new System.Drawing.Size(261, 32);
+            this.labelConnectionCheck.TabIndex = 0;
+            this.labelConnectionCheck.Text = "labelConnectionCheck";
+            // 
+            // labelDbUsage
+            // 
+            this.labelDbUsage.AutoSize = true;
+            this.labelDbUsage.ForeColor = System.Drawing.Color.Gray;
+            this.labelDbUsage.Location = new System.Drawing.Point(3, 32);
+            this.labelDbUsage.Name = "labelDbUsage";
+            this.labelDbUsage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.labelDbUsage.Size = new System.Drawing.Size(84, 13);
+            this.labelDbUsage.TabIndex = 1;
+            this.labelDbUsage.Text = "labelDbUsage";
+            // 
             // Topcast_Report_Manager_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,6 +356,8 @@ namespace Topcast_Report_Manager.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_Flags.ResumeLayout(false);
             this.tableLayoutPanelFlags.ResumeLayout(false);
+            this.tableLayoutPanelDbUsage.ResumeLayout(false);
+            this.tableLayoutPanelDbUsage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -340,7 +370,6 @@ namespace Topcast_Report_Manager.Forms
         private System.Windows.Forms.Button buttonOpenSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelConnectionString;
-        private System.Windows.Forms.Label labelConnectionCheck;
         private System.Windows.Forms.Button buttonOpenShowData;
         private System.Windows.Forms.Button buttonOpenShowTrend;
         private System.Windows.Forms.Button buttonOpenReport;
@@ -352,6 +381,9 @@ namespace Topcast_Report_Manager.Forms
         private System.Windows.Forms.Button button_DE;
         private System.Windows.Forms.Button button_FR;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelFlags;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDbUsage;
+        private System.Windows.Forms.Label labelConnectionCheck;
+        private System.Windows.Forms.Label labelDbUsage;
     }
 }
 

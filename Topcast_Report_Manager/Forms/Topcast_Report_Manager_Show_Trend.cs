@@ -26,8 +26,6 @@ namespace Topcast_Report_Manager.Forms
 
         private Timer livePotTimer;
 
-        private double chartResolution;
-
         public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
         {
             InitializeComponent();
@@ -491,7 +489,7 @@ namespace Topcast_Report_Manager.Forms
             //Get Chart data To DataTable
             try
             {
-                chartData = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+                chartData = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(qry);
             }
             catch (Exception ex)
             {

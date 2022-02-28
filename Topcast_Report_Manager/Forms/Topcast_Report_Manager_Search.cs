@@ -113,19 +113,19 @@ namespace Topcast_Report_Manager.Forms
                 {
                     Process.Start(@"C:\Windows\WinSxS\amd64_microsoft-windows-osk_31bf3856ad364e35_10.0.19041.1_none_60ade0eff94c37fc\osk.exe");
                 }
-                catch (Exception ex)
+                catch
                 {
                     try
                     {
                         Process.Start(@"C:\Windows\System32\osk.exe");
                     }
-                    catch (Exception ex2)
+                    catch
                     {
                         try
                         {
                             Process.Start(@"C:\Program Files(x86)\Common Files\Siemens\PTTouchInput");
                         }
-                        catch (Exception ex3)
+                        catch
                         {
                             MessageBox.Show("Impossible to open On Screen Keyboard", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
@@ -146,7 +146,7 @@ namespace Topcast_Report_Manager.Forms
 
             try
             {
-                dataTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qry);
+                dataTable = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(qry);
             }
             catch(Exception ex)
             {

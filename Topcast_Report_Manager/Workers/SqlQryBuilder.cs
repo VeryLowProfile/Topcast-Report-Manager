@@ -178,7 +178,8 @@ namespace Topcast_Report_Manager.Workers
                 stringBuilder.Append($" {pivot.colName} AS '{pivot.selectedText}',");
             }
 
-            stringBuilder.Append($" CAST ({datetimeColName} AS datetime)  AS {datetimeVarName} ");
+            stringBuilder.Append($"{datetimeColName} AS {datetimeVarName} ");
+            //stringBuilder.Append($" CAST ({datetimeColName} AS datetime)  AS {datetimeVarName} ");
             stringBuilder.Append($" FROM {tableName} ");
             stringBuilder.Append($" WHERE  {IDColName} = '{selectedID}'");
             stringBuilder.Append($" ORDER BY {datetimeColName}");
@@ -227,8 +228,8 @@ namespace Topcast_Report_Manager.Workers
                 stringBuilder.Append($" {pivot.colName} AS '{pivot.selectedText}',");
             }
 
-            //stringBuilder.Append($"{datetimeColName} AS {datetimeVarName} ");
-            stringBuilder.Append($" CAST ({datetimeColName} AS datetime)  AS {datetimeVarName} ");
+            stringBuilder.Append($"{datetimeColName} AS {datetimeVarName} ");
+            //stringBuilder.Append($" CAST ({datetimeColName} AS datetime)  AS {datetimeVarName} "); //SO UNA SEA PERCHè ERA COSì
             stringBuilder.Append($" FROM {tableName} ");
             stringBuilder.Append($" WHERE  {IDColName} = '{selectedID}'");
             stringBuilder.Append($" ORDER BY {datetimeColName}");

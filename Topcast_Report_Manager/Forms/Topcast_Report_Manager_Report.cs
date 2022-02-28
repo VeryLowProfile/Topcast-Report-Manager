@@ -261,7 +261,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    logVarTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, logVarQry);
+                    logVarTable = Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQuery(logVarQry);
                     ExportManagement.ExportDataTableToCSV(logVarTable, logVarfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
                     //update progress bar
@@ -291,7 +291,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    alarmTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, alarmQry);
+                    alarmTable = Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQuery(alarmQry);
                     ExportManagement.ExportDataTableToCSV(DataTableManagement.GetDataTableAlarmsXref(Topcast_Report_Manager_Main.AppConfig, alarmTable), alarmsfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
                     //update progress bar
@@ -320,7 +320,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    eventTable = SqlManagement.SqlExecuteQuery(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, eventQry);
+                    eventTable = Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQuery(eventQry);
                     ExportManagement.ExportDataTableToCSV(DataTableManagement.GetDataTableEventsXref(Topcast_Report_Manager_Main.AppConfig, eventTable), eventsfilePath, Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
 
                     //update progress bar

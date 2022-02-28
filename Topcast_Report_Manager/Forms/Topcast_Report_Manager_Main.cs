@@ -19,6 +19,8 @@ namespace Topcast_Report_Manager.Forms
         public static SearchParam SearchParam { get; set; }
         public static SelectedData SelectedData { get; set; }
 
+        public static SqlManagement SqlManagement { get; set; }
+
         public event EventHandler changeLenguage;
 
         public Topcast_Report_Manager_Main()
@@ -160,9 +162,17 @@ namespace Topcast_Report_Manager.Forms
                 activeForm = FormVisualizationManagement.OpenFormInPanel(new Topcast_Report_Manager_Search(this), panelChildform);
 
 
-                //Sql Connection Test
+                //Create SqlManagement Instance
                 //*******************************************************************************************************************
+                SqlManagement = new SqlManagement(AppConfig.SqlConnConfig);
 
+                //Test Sql connection
+                //*******************************************************************************************************************
+                labelConnectionCheck.Text = SqlManagement.SqlTestConnection();
+
+                //Get Db Usage
+                //*******************************************************************************************************************
+                labelDbUsage.Text = SqlManagement.SqlGetDbUsage();
 
             }
         }

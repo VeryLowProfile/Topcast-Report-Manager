@@ -70,3 +70,17 @@ C:\Users\Enrico\Desktop\SQL Update\New_ReportManager\Topcast_Report_Manager\Topc
 C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.csproj.SuggestedBindingRedirects.cache
 C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Controls.cursorValue.resources
 C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\obj\Debug\Topcast_Report_Manager.Forms.Topcast_Report_Manager_Report_Print_Status.resources
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\MySqlConnector.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Buffers.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Memory.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Numerics.Vectors.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\MySqlConnector.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Buffers.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Memory.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Numerics.Vectors.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Progetti\VisualStudio\Develop\Topcast_Report_Manager\Topcast_Report_Manager\bin\Debug\System.Threading.Tasks.Extensions.xml

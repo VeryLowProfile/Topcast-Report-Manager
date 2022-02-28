@@ -61,7 +61,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    dataTableBegin = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qryBegin);
+                    dataTableBegin = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(qryBegin);
                 }
                 catch (Exception ex)
                 {
@@ -70,7 +70,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    dataTableEnd = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, qryEnd);
+                    dataTableEnd = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(qryEnd);
                 }
                 catch (Exception ex)
                 {
@@ -97,7 +97,7 @@ namespace Topcast_Report_Manager.Forms
 
             try
             {
-                alarmTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, alarmQry);
+                alarmTable = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(alarmQry);
             }
             catch (Exception ex)
             {
@@ -114,7 +114,7 @@ namespace Topcast_Report_Manager.Forms
 
                 try
                 {
-                    eventTable = await SqlManagement.SqlExecuteQueryAsync(Topcast_Report_Manager_Main.AppConfig.SqlConnConfig.SqlConnectionString, eventQry);
+                    eventTable = await Topcast_Report_Manager_Main.SqlManagement.SqlExecuteQueryAsync(eventQry);
                 }
                 catch (Exception ex)
                 {

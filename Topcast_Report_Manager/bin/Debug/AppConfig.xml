@@ -15,13 +15,13 @@
     <IsVirtualKeyBoard>False</IsVirtualKeyBoard>
   </GenConfig>
   <SqlConnConfig>
-	<SqlType>SQL</SqlType>
-    <SqlServerIP>192.168.10.100</SqlServerIP>
-    <SqlServerName>SQLEXPRESS</SqlServerName>
-    <SqlDbName>TCC</SqlDbName>
+	<SqlType>MySQL</SqlType>
+    <SqlServerIP>192.168.10.150</SqlServerIP>
+    <SqlServerName></SqlServerName>
+    <SqlDbName>Test</SqlDbName>
     <SqlUserID>Topcast</SqlUserID>
     <SqlUserPWD>Topcast</SqlUserPWD>
-    <SqlDateTimeFormat>yyyy-dd-MM HH:mm:ss.FFF</SqlDateTimeFormat>
+    <SqlDateTimeFormat>yyyy-MM-dd HH:mm:ss.FFF</SqlDateTimeFormat>
   </SqlConnConfig>
   <SqlTableConfig>
     <VarLogTable>LogVariables</VarLogTable>
