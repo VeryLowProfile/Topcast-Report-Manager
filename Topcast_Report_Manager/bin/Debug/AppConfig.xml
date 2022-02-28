@@ -15,6 +15,7 @@
     <IsVirtualKeyBoard>False</IsVirtualKeyBoard>
   </GenConfig>
   <SqlConnConfig>
+	<SqlType>SQL</SqlType>
     <SqlServerIP>192.168.10.100</SqlServerIP>
     <SqlServerName>SQLEXPRESS</SqlServerName>
     <SqlDbName>TCC</SqlDbName>

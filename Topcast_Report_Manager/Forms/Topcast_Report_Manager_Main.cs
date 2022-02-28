@@ -32,136 +32,18 @@ namespace Topcast_Report_Manager.Forms
 
         private void Topcast_Report_Manager_Main_Load(object sender, EventArgs e)
         {
-            //Get App Config
+            //Check if AppConfig.xml exist
             if (File.Exists("AppConfig.xml"))
             {
                 try
                 {
-                    try
-                    {
-                        AppConfig.GetAppConfigXML(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + @"\AppConfig.xml");
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception("Topcast_Report_Manager_Main_Load - AppConfig.XML read fail " + ex.Message);
-                    }
-
-                    //Change size From Config
-                    try
-                    {
-                        if (AppConfig.GenConfig.FullScreen == "True")
-                        {
-                            WindowState = FormWindowState.Maximized;
-                        }
-                        else
-                        {
-                            Size = new Size(int.Parse(AppConfig.GenConfig.MainFormWidth), int.Parse(AppConfig.GenConfig.MainFormHeight));
-                            panelChildform.Size = new Size(int.Parse(AppConfig.GenConfig.ChildFormWidth), int.Parse(AppConfig.GenConfig.ChildFormHeight));
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception("Topcast_Report_Manager_Main_Load - Resize to config size not possible " + ex.Message);
-                    }
-
-                    //Visibility Alarm Events Button
-                    if (AppConfig.GenConfig.IsAlarmLog == "True" || AppConfig.GenConfig.IsEventLog == "True")
-                    {
-                        buttonOpenShowAlarmsEvents.Visible = true;
-                    }
-                    else
-                    {
-                        buttonOpenShowAlarmsEvents.Visible = false;
-                    }
-
-                    //Show Connection String
-                    labelConnectionString.Text = $"Connection String: {AppConfig.SqlConnConfig.SqlConnectionString}";
-                    labelConnectionCheck.Text = "CONNECTION FAIL";
-
-                    //Connection Test
-                    if (AppConfig.SqlConnConfig.SqlConnectionString != "")
-                    {
-                        try
-                        {
-                            SqlManagement.SqlTestConnection(AppConfig.SqlConnConfig.SqlConnectionString);
-                            DataTable dt = new DataTable();
-                            dt = SqlManagement.SqlGetDbUsage(AppConfig.SqlConnConfig.SqlConnectionString);
-                            labelConnectionCheck.Text = $"CONNECTION OK \n" +
-                                                        $"{dt.Columns[0].ColumnName} {dt.Rows[0][0]}\n" +
-                                                        $"{dt.Columns[1].ColumnName} {dt.Rows[0][1]}\n" +
-                                                        $"{dt.Columns[2].ColumnName} {dt.Rows[0][2]}";
-                        }
-                        catch (Exception ex)
-                        {                           
-                            throw new Exception("Topcast_Report_Manager_Main_Load - Sql test connection fail " + ex.Message);                           
-                        }
-                    }
-
-                    //Get LogVar Config
-                    if (File.Exists("LogVarConfig.xml"))
-                    {
-                        try
-                        {
-                            AppConfig.GetLogVarConfig(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + @"\LogVarConfig.xml");
-                        }
-                        catch (Exception ex)
-                        {
-                            throw new Exception("Topcast_Report_Manager_Main_Load - LogVarConfig.XML read fail " + ex.Message);
-                        }
-                    }
-                    else
-                    {
-                        throw new Exception("Topcast_Report_Manager_Main_Load - LogVarConfig.xml file not found ");
-                    }
-
-                    //Get alarm config
-                    if (AppConfig.GenConfig.IsAlarmLog == "True")
-                    {
-                        if (File.Exists("AlarmsConfig.xml"))
-                        {
-                            try
-                            {
-                                AppConfig.GetAlarmsConfigXML(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + @"\AlarmsConfig.xml");
-                            }
-                            catch (Exception ex)
-                            {
-                                throw new Exception("Topcast_Report_Manager_Main_Load - AlarmsConfig.XML read fail " + ex.Message);
-                            }
-                        }
-                        else
-                        {
-                            throw new Exception("Topcast_Report_Manager_Main_Load - AlarmsConfig.xml file not found");
-                        }
-                    }
-
-                    //Get event config
-                    if (AppConfig.GenConfig.IsEventLog == "True")
-                    {
-                        if (File.Exists("EventsConfig.xml"))
-                        {
-                            try
-                            {
-                                AppConfig.GetEventsConfigXML(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + @"\EventsConfig.xml");
-                            }
-                            catch (Exception ex)
-                            {
-                                throw new Exception("Topcast_Report_Manager_Main_Load - EventsConfig.XML read fail " + ex.Message);
-                            }
-                        }
-                        else
-                        {
-                            throw new Exception("Topcast_Report_Manager_Main_Load - EventsConfig.xml file not found");
-                        }
-                    }
-
-                    //Set Current Lenguage
-                    ChangeLenguage();
-                    SelectActualVarLenguage();                    
+                    //Read AppConfig.xml
+                    AppConfig.GetAppConfigXML(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\AppConfig.xml");
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Topcast_Report_Manager_Main_Load: {ex.Message}");
                 }
             }
             else
@@ -169,10 +51,143 @@ namespace Topcast_Report_Manager.Forms
                 MessageBox.Show("AppConfig.xml file not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-            FormVisualizationManagement.CloseForm(activeForm);
-            activeForm = FormVisualizationManagement.OpenFormInPanel(new Topcast_Report_Manager_Search(this), panelChildform);
+            //Check if main Apponfig is loaded ok and proceed with other parameters
+            if (AppConfig.AppconfigOk)
+            {
+                //Check if LogVarConfig.xml Exist
+                if (File.Exists("LogVarConfig.xml"))
+                {
+                    try
+                    {
+                        //Read LogVarConfig.xml
+                        AppConfig.GetLogVarConfig(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\LogVarConfig.xml");
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Topcast_Report_Manager_Main_Load: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("LogVarConfig.xml file not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                //Cehck if need to load AlarmsConfig.xml
+                if (AppConfig.GenConfig.IsAlarmLog == "True")
+                {
+                    //Check if AlarmsConfig.xml Exist
+                    if (File.Exists("AlarmsConfig.xml"))
+                    {
+                        try
+                        {
+                            //Read AlarmsConfig.xml
+                            AppConfig.GetAlarmsConfigXML(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\AlarmsConfig.xml");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Topcast_Report_Manager_Main_Load: {ex.Message}");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("AlarmsConfig.xml file not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+
+                //Cehck if need to load EventsConfig.xml
+                if (AppConfig.GenConfig.IsEventLog == "True")
+                {
+                    //Check if EventsConfig.xml Exist
+                    if (File.Exists("EventsConfig.xml"))
+                    {
+                        try
+                        {
+                            //Read AlarmsConfig.xml
+                            AppConfig.GetEventsConfigXML(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\EventsConfig.xml");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Topcast_Report_Manager_Main_Load: {ex.Message}");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("EventsConfig.xml file not found", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+
+                //Apply App configuration
+                //*******************************************************************************************************************
+
+                //Change screen size
+                try
+                {
+                    if (AppConfig.GenConfig.FullScreen == "True")
+                    {
+                        WindowState = FormWindowState.Maximized;
+                    }
+                    else
+                    {
+                        Size = new Size(int.Parse(AppConfig.GenConfig.MainFormWidth), int.Parse(AppConfig.GenConfig.MainFormHeight));
+                        panelChildform.Size = new Size(int.Parse(AppConfig.GenConfig.ChildFormWidth), int.Parse(AppConfig.GenConfig.ChildFormHeight));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Topcast_Report_Manager_Main_Load - Change screen size: {ex.Message}");
+                }
+
+                //Set visibility of alarm/Events button
+                if (AppConfig.GenConfig.IsAlarmLog == "True" || AppConfig.GenConfig.IsEventLog == "True")
+                {
+                    buttonOpenShowAlarmsEvents.Visible = true;
+                }
+                else
+                {
+                    buttonOpenShowAlarmsEvents.Visible = false;
+                }
+
+                //Show Connection String
+                labelConnectionString.Text = $"Connection String: {AppConfig.SqlConnConfig.SqlConnectionString}";
+
+                //Set Current Lenguage
+                ChangeLenguage();
+                SelectActualVarLenguage();
+
+                //Open Search Form as default
+                FormVisualizationManagement.CloseForm(activeForm);
+                activeForm = FormVisualizationManagement.OpenFormInPanel(new Topcast_Report_Manager_Search(this), panelChildform);
+
+
+                //Sql Connection Test
+                //*******************************************************************************************************************
+
+
+            }
         }
+                    
+             
+
+        //            //Connection Test
+        //            if (AppConfig.SqlConnConfig.SqlConnectionString != "")
+        //            {
+        //                try
+        //                {
+        //                    SqlManagement.SqlTestConnection(AppConfig.SqlConnConfig.SqlConnectionString);
+        //                    DataTable dt = new DataTable();
+        //                    dt = SqlManagement.SqlGetDbUsage(AppConfig.SqlConnConfig.SqlConnectionString);
+        //                    labelConnectionCheck.Text = $"CONNECTION OK \n" +
+        //                                                $"{dt.Columns[0].ColumnName} {dt.Rows[0][0]}\n" +
+        //                                                $"{dt.Columns[1].ColumnName} {dt.Rows[0][1]}\n" +
+        //                                                $"{dt.Columns[2].ColumnName} {dt.Rows[0][2]}";
+        //                }
+        //                catch (Exception ex)
+        //                {                           
+        //                    throw new Exception("Topcast_Report_Manager_Main_Load - Sql test connection fail " + ex.Message);                           
+        //                }
+        //            }          
+
 
         private void buttonOpenSearch_Click(object sender, EventArgs e)
         {

@@ -11,6 +11,11 @@ namespace Topcast_Report_Manager.Data
         public LogVarConfig LogVarConfig { get; set; }
         public AlarmsConfig AlarmConfig { get; set; }
         public EventsConfig EventsConfig { get; set; }
+        public bool AppconfigOk { get; set; }
+        public bool LogVarConfigOk { get; set; }
+        public bool AlarmConfigOk  { get; set; }
+        public bool EventsConfigOk { get; set; }
+
 
         public AppConfig()
         {
@@ -28,7 +33,9 @@ namespace Topcast_Report_Manager.Data
             //Load xml Config document
             try
             {
+                //Load AppConfig.xml
                 XDocument xml = XDocument.Load(path);
+
                 var GenConfigElements = xml.Root.Element("GenConfig").Descendants();
                 foreach (var element in GenConfigElements)
                 {
@@ -82,53 +89,19 @@ namespace Topcast_Report_Manager.Data
                     }
                 }
 
-                //ConnConfig Nodes Params
-                var sqlConnConfigElements = xml.Root.Element("SqlConnConfig").Descendants();
-                foreach (var element in sqlConnConfigElements)
-                {
-                    if (element.Name == "SqlServerIP")
-                    {
-                        SqlConnConfig.SqlServerIP = element.Value;
-                    }
-                    if (element.Name == "SqlServerName")
-                    {
-                        SqlConnConfig.SqlServerName = element.Value;
-                    }
-                    if (element.Name == "SqlDbName")
-                    {
-                        SqlConnConfig.SqlDbName = element.Value;
-                    }
-                    if (element.Name == "SqlUserID")
-                    {
-                        SqlConnConfig.SqlUserID = element.Value;
-                    }
-                    if (element.Name == "SqlUserPWD")
-                    {
-                        SqlConnConfig.SqlUserPWD = element.Value;
-                    }
-                    if (element.Name == "SqlDateTimeFormat")
-                    {
-                        SqlConnConfig.SqlDateTimeFormat = element.Value;
-                    }
-                }
-
-                //Build Connection String
-                SqlConnConfig.SqlConnectionString = $"Server = {SqlConnConfig.SqlServerIP}\\{SqlConnConfig.SqlServerName}; Database = {SqlConnConfig.SqlDbName}; UID = {SqlConnConfig.SqlUserID}; PWD = {SqlConnConfig.SqlUserPWD}";
+                //Read Connection config
+                SqlConnConfig.GetConnectionConfig(xml);
 
                 //TableConfig Nodes Params
-                var sqlTableConfigElements = xml.Root.Element("SqlTableConfig").Descendants();
-                foreach (var element in sqlTableConfigElements)
-                {
-                    SqlTable sqlTable = new SqlTable();
-                    sqlTable.TableType = element.Name.ToString();
-                    sqlTable.TableName = element.Value.ToString();
+                SqlTableConfig.GetTableConfig(xml);
 
-                    SqlTableConfig.SqlTables.Add(sqlTable);
-                }
+                //Set Appconfig as ok if no excepiton
+                AppconfigOk = true;
+
             }
             catch (Exception ex)
             {
-                throw new Exception("AppConfig.GetAppConfigXML - xml Load Failed", ex.InnerException);
+                throw new Exception($"AppConfig.GetAppConfigXML: {ex.Message}");
             }
         }
 
@@ -156,6 +129,9 @@ namespace Topcast_Report_Manager.Data
 
                     LogVarConfig.LogVar.Add(logVar);
                 }
+
+                LogVarConfigOk = true;
+
             }
             catch (Exception ex)
             {
@@ -181,6 +157,9 @@ namespace Topcast_Report_Manager.Data
 
                     AlarmConfig.Alarms.Add(logAlarm);
                 }
+
+                AlarmConfigOk = true;
+
             }
             catch(Exception ex)
             {
@@ -207,11 +186,15 @@ namespace Topcast_Report_Manager.Data
 
                     EventsConfig.Events.Add(logEvent);
                 }
+
+                EventsConfigOk = true;
+
             }
             catch (Exception ex)
             {
                 throw new Exception("AppConfig.GetEventsConfigXML - xml Load Failed", ex.InnerException);
             }
         }
+
     }
 }

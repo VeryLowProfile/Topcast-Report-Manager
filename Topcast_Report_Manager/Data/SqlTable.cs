@@ -1,5 +1,4 @@
-﻿
-namespace Topcast_Report_Manager.Data
+﻿namespace Topcast_Report_Manager.Data
 {
     public class SqlTable
     {

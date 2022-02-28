@@ -16,6 +16,7 @@ namespace Topcast_Report_Manager.Workers
             {  
                 sqlConnection.Open();
                 command.ExecuteScalar();
+                sqlConnection.Close();
             }
             catch (Exception ex)
             {
