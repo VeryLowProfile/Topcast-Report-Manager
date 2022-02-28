@@ -82,13 +82,13 @@ namespace Topcast_Report_Manager.Workers
             //Create columns into the new table
             foreach (DataColumn col in dataTable.Columns)
             {
-                dataTable.Columns.Add(col);
+                resultTable = dataTable.Clone();
             }
 
             //Copy Rows into new table
             for (int i = startRow; i < endRow; i++)
             {
-                dataTable.Rows.Add(dataTable.Rows[i]);
+                resultTable.ImportRow(dataTable.Rows[i]);
             }
 
             return resultTable;

@@ -26,6 +26,8 @@ namespace Topcast_Report_Manager.Forms
 
         private Timer livePotTimer;
 
+        private double chartResolution;
+
         public Topcast_Report_Manager_Show_Trend(Topcast_Report_Manager_Main mainForm)
         {
             InitializeComponent();
@@ -73,7 +75,8 @@ namespace Topcast_Report_Manager.Forms
 
             chartArea.BackColor = panelPlot.BackColor;
 
-            chartArea.AxisX.IntervalType = DateTimeIntervalType.Auto;
+            chartArea.AxisX.LabelStyle.Format = "hh:mm:ss";
+            chartArea.AxisX.IntervalType = DateTimeIntervalType.Seconds;
             chartArea.AxisX.ScaleView.Zoomable = true;
             chartArea.AxisX.ScrollBar.Enabled = true;
             chartArea.AxisX.ScrollBar.IsPositionedInside = false;
@@ -290,7 +293,7 @@ namespace Topcast_Report_Manager.Forms
 
             if (result == DialogResult.OK)
             {
-                string folderPath = folderBrowserDialog.SelectedPath + @"\" + "TrendImage_" + comboBoxIDList.Text + ".png";
+                string folderPath = folderBrowserDialog.SelectedPath + @"\" + "ChartImage_" + comboBoxIDList.Text + ".png";
                 chart.SaveImage(folderPath, ChartImageFormat.Png);
             }
         }
@@ -315,15 +318,22 @@ namespace Topcast_Report_Manager.Forms
 
         private void buttonPrint_Click(object sender, EventArgs e)
         {
-            DataTable dataTable = new DataTable();
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.SelectedPath = Topcast_Report_Manager_Main.AppConfig.GenConfig.DefReportPath;
+            DialogResult result = folderBrowserDialog.ShowDialog();
 
-            int beginIndex = calculateInitIndex(chartArea, chart.Series[0]);
-            int endIndex = calculateendIndex(chartArea, chart.Series[0]);
+            if (result == DialogResult.OK)
+            {
 
-            dataTable = DataTableManagement.TrimTable(chartData, beginIndex, endIndex);
+                //Get Main Folder path
+                string folderPath = folderBrowserDialog.SelectedPath;
 
+                //saving Chart picture
+                chart.SaveImage(folderPath +@"\" + "TrendImage_" + comboBoxIDList.Text + ".png", ChartImageFormat.Png);
 
-
+                //saving chart data table
+                ExportManagement.ExportDataTableToCSV(chartData, folderPath + @"\" + "ChartData_" + comboBoxIDList.Text + ".csv", Topcast_Report_Manager_Main.AppConfig.GenConfig.CsvSeparator);
+            }
         }
 
         private void Topcast_Report_Manager_Show_Trend_FormClosing(object sender, FormClosingEventArgs e)
@@ -502,7 +512,6 @@ namespace Topcast_Report_Manager.Forms
 
             //wait data task end
             await Task.WhenAll(tasks);
-
         }
 
         public void addNewSeriesToChart(DataTable dataTable, string varName, string plotColor, string userUnit)
@@ -512,7 +521,7 @@ namespace Topcast_Report_Manager.Forms
             series.Name = varName;
             series.Color = Color.FromName(plotColor);
             series.ChartType = SeriesChartType.FastLine;
-            series.XValueType = ChartValueType.Time;
+            series.XValueType = ChartValueType.DateTime;
 
             series.BorderWidth = 2;
 
@@ -554,44 +563,32 @@ namespace Topcast_Report_Manager.Forms
             buttonShowTrends.Text = resourceManager.GetString("BTN_SHOW_TRENDS", ci);
         }
 
+        private double calculateChartResolution(ChartArea chartArea, Series series)
+        {
+            double chartResolution;
+
+            var xAxis = chartArea.AxisX;
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum);
+            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
+
+            chartResolution = ((double)series.Points.Count / (xRight - xLeft));
+
+            return chartResolution;
+
+        }
+
         private int calculateSeriesIndex(ChartArea chartArea, Series series, Point point)
         {
             double index = 0;
 
             var xAxis = chartArea.AxisX;
-            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
+            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum);
             double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
 
             if (point.X >= xLeft && point.X <= xRight)
             {
                 index = ((double)(series.Points.Count / (xRight - xLeft)) * (point.X - xLeft));
             }
-
-            return (int)index;
-        }
-
-        private int calculateInitIndex(ChartArea chartArea, Series series)
-        {
-            double index = 0;
-
-            var xAxis = chartArea.AxisX;
-            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
-            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
-
-            index = (double)series.Points.Count / (xRight - xLeft);
-
-            return (int)index;
-        }
-
-        private int calculateendIndex(ChartArea chartArea, Series series)
-        {
-            double index = 0;
-
-            var xAxis = chartArea.AxisX;
-            double xRight = xAxis.ValueToPixelPosition(xAxis.Maximum) - 1;
-            double xLeft = xAxis.ValueToPixelPosition(xAxis.Minimum);
-
-            index = ((double)series.Points.Count) / (xRight - xLeft) * xLeft;
 
             return (int)index;
         }
